@@ -5,26 +5,37 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="fontawesome/css/all.min.css">
         <style>
+            .profile {
+                width: 150px;
+                height: 150px;
+                border-radius: 300%;
+                background-size: cover;
+            }
             @media (max-width: 425px) {
-                .links {
-                    display: none;
+                .profile {
+                    width: 100px;
+                    height: 100px;
                 }
-                .team-pic {
-                    width: 100% !important;
-                }
+            }
+            .team .member {
+                cursor: pointer;
+            }
+            .team .member:hover {
+                border-color: #3791c0 !important;
+                transition: border 0.3s linear;
             }
         </style>
     </head>
     <body>
         <!-- Header -->
-        <div>
-            <div class="banner">
+        <div class="row no-gutters p-0">         
+            <div class="banner order-2 order-md-1 col-12">
                 <div class="shadow"></div>
                 <div class="bg-overlay"></div>
                 
                 <div class="content container">
                     <div class="logo">
-                        <img class="logo" src="img/logo.png" alt="">
+                        <img class="logo" src="img/logo/whyvegashawaii.png" alt="">
                     </div>
                     <div class="team-pic">
                         <img src="img/team_pic.png" alt="">
@@ -37,13 +48,13 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+                <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
                 </button>
-                <div class="collapse navbar-collapse container" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto bg-primary">
-                        <li class="nav-item">
+                <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
@@ -59,19 +70,30 @@
                             <a class="nav-link" href="#">News</a>
                         </li>
                     </ul>
-                 
-                </div>
+                </div> 
             </nav>
         </div>
 
-        <div class="container pt-5 pb-5">
+        <div class="container pt-5 pb-5 team">
             <div class="row">
-                <div class="col-12 col-lg-8">      
-                    <div>
-                        <img class="d-block mx-auto" src="img/Xpand logo.jpg" alt="" width="150">
+                <div class="col-12 col-lg-8"> 
+                    <h1 class="text-primary pb-3">Meet the team</h1>     
+                    
+                    <div class="team">
+                        <img class="d-block mx-auto" src="img/logo/xpand.jpg" alt="" width="150">
                         <div class="row mt-3">
-                            <div class="col-lg-4 text-center border pt-3">
-                                <div class="profile mx-auto mb-3 border-top border-left border-bottom" style="background-image: url('img/david.jpg');"></div>
+                            <div class="col-md-4 text-center border pt-3 member" data-link="darrell.html">
+                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/darrell.png');"></div>
+                                <h3 class="text-primary mb-1">Darrell Kimura</h3>
+                                <ul class="list-unstyled small text-center">
+                                    <li class="mb-1">Hawaii RA RS-77249</li>
+                                    <li class="mb-1">Nevada Realtor S178102</li>
+                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.348.9773</li>
+                                    <li><i class="fas fa-envelope mr-1"></i>darrell@xpandrealty.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-center border pt-3 member" data-link="david.html">
+                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/david.jpg');"></div>
                                 <h3 class="text-primary mb-1">David Sur</h3>
                                 <ul class="list-unstyled small text-center">
                                     <li class="mb-1">Hawaii RA RS-81829</li>
@@ -80,38 +102,27 @@
                                     <li><i class="fas fa-envelope mr-1"></i>david@xpandrealty.com</li>
                                 </ul>
                             </div>
-                            <div class="col-lg-4 text-center border-top border-bottom pt-3">
-                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/david.jpg');"></div>
-                                <h3 class="text-primary mb-1">David Sur</h3>
+                            <div class="col-md-4 text-center border pt-3  member" data-link="barbie.html">
+                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/barbie.jpg');"></div>
+                                <h3 class="text-primary mb-1">Barbie Hee</h3>
                                 <ul class="list-unstyled small text-center">
-                                    <li class="mb-1">Hawaii RA RS-81829</li>
-                                    <li class="mb-1">Nevada Realtor S0187093</li>
-                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.383.1134</li>
-                                    <li><i class="fas fa-envelope mr-1"></i>david@xpandrealty.com</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 text-center border pt-3">
-                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/david.jpg');"></div>
-                                <h3 class="text-primary mb-1">David Sur</h3>
-                                <ul class="list-unstyled small text-center">
-                                    <li class="mb-1">Hawaii RA RS-81829</li>
-                                    <li class="mb-1">Nevada Realtor S0187093</li>
-                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.383.1134</li>
-                                    <li><i class="fas fa-envelope mr-1"></i>david@xpandrealty.com</li>
+                                    <li class="mb-1">Hawaii RB-18438</li>
+                                    <li class="mb-1">Nevada Realtor BS.0145792</li>
+                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.375.7483</li>
+                                    <li><i class="fas fa-envelope mr-1"></i>barbie@xpandrealty.com</li>
                                 </ul>
                             </div>
                     </div>
                     <div class="mt-5">
-                        <img class="d-block mx-auto" src="img/prmi.jpg" alt="" width="150">
-                        <div class="row mt-3">
-                            <div class="col-lg-4 text-center border pt-3">
-                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/steven.jpg');"></div>
-                                <h3 class="text-primary mb-1">David Sur</h3>
+                        <img class="d-block mx-auto" src="img/logo/prmi.jpg" alt="" width="150">
+                        <div class="row mt-3" >
+                            <div class="col-lg-4 text-center border pt-3  member" data-link="steven.html">
+                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/steven.jpg');"></div>
+                                <h3 class="text-primary mb-1">Steven Tagawa</h3>
                                 <ul class="list-unstyled small text-center">
-                                    <li class="mb-1">Hawaii RA RS-81829</li>
-                                    <li class="mb-1">Nevada Realtor S0187093</li>
-                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.383.1134</li>
-                                    <li><i class="fas fa-envelope mr-1"></i>david@xpandrealty.com</li>
+                                    <li class="mb-1">NMLS 301073</li>
+                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.780.9405</li>
+                                    <li><i class="fas fa-envelope mr-1"></i>stagawa@primeres.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -120,5 +131,14 @@
             </div>
         </div>
 
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.member').click(function() {
+                    location.href='bios/' + $(this).attr('data-link');
+                });
+            })
+        </script>
     </body>
 </html>
