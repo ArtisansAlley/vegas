@@ -1,0 +1,54 @@
+.white-shadow {
+    /* position: absolute;
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 1029;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 70%, white); */
+}
+#photo {
+    width: 100%;
+    left:0;
+    top: 0;
+    border-bottom: 2px solid white;
+}
+@media (min-width: 1024px) {
+    #photo {
+        position: absolute;
+    }
+    .biography {
+        height: 70vh;
+        overflow:auto
+    }
+}
+@media (max-width: 425px) {
+    #photo {
+        position: static;
+    }
+    .info .w-25 {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .info img {
+        margin-top: 30px !important;
+        width: 40% !important; 
+    }
+}
+@media (max-width: 768px) {
+    h2,
+    .info li,
+    .biography,
+    .info {
+        display: block !important;
+        text-align: center;
+    }
+    .info .w-25 {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .info img {
+        margin-top: 30px !important;
+        width: 20% !important; 
+    }
+}
