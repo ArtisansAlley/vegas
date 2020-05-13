@@ -12,12 +12,17 @@
 }
 #darrell {
     background: url('../img/team/darrell.png');
+    background-position: 0% -10% !important;
+    background-repeat: no-repeat;
 }
 #barbie {
     background: url('../img/team/barbie.jpg');
+    background-position: 0% -10% !important;
+    background-repeat: no-repeat;
 }
 #steve {
     background: url('../img/team/steven.jpg');
+    
 }
 
 @media (max-width: 425px) {
