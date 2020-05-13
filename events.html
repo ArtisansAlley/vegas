@@ -1,0 +1,382 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <style>
+      #news .card-img-top {
+        height: 150px;
+        background: url("img/banner.jpeg");
+        background-size: cover;
+        border-radius: 0 !important;
+        position: relative;
+      }
+      #news .headline {
+        position: relative;
+        height: 200px;
+        margin-bottom: 1.5rem !important;
+      }
+      .headline > .overlay {
+        background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
+        z-index: 1;
+      }
+      #news .headline .container {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        color: white;
+      }
+      #news .card-deck {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+      #news .card-deck .card {
+        margin-left: 1px;
+        margin-right: 1px;
+        border: 0 !important;
+      }
+
+        .single-blog-img {
+    overflow: hidden;
+}
+
+.single-blog-img a img {
+    width: 100%;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.single-blog:hover .single-blog-img a img {
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
+    transform: scale(1.09);
+}
+.single-blog-img img {
+    width: 100%;
+}
+
+.blog-content-box {
+    padding-left: 25px;
+    padding-top: 27px;
+    margin-left: 34px;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+    background: #fff;
+    padding-bottom: 30px;
+}
+.blog-post-date {
+    display: table;
+    float: left;
+    margin-right: 30px;
+}
+.blog-post-date span:first-child {
+    color: #d4451ce0;
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: -11px;
+    margin-bottom: -4px;
+    text-align: center;
+}
+.blog-post-date span:last-child {
+    font-size: 14px;
+    color: #212121;
+    font-weight: 600;
+}
+.blog-content {
+    display: table;
+}
+.blog-content h4 {
+    color: #212121;
+}
+.blog-content h4 a {
+    color: #212121;
+    text-decoration: none;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.blog-content h4 a:hover {
+    color: #d4451ce0;
+}
+/* .meta-post {
+    margin: 10px 0 13px;
+} */
+.meta-post span {
+    color: #696969;
+    font-size: 15px;
+    position: relative;
+    padding-right: 23px;
+}
+.author {
+    margin-bottom: 60px;
+}
+/* .meta-post span a {
+    color: #696969;
+    -webkit-transition: .2s;
+    transition: .2s;
+} */
+
+/* .meta-post span:after {
+    position: absolute;
+    content: "-";
+    right: 4px;
+} */
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.meta-post span:last-child {
+    padding-right: 0;
+}
+/* .exerpt {
+    line-height: 28px;
+    color: #696969;
+    margin-bottom: 37px;
+} */
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+  <div class="row no-gutters p-0">
+            <div class="banner order-2 order-md-1 col-12">
+                <div class="shadow"></div>
+                <video autoplay muted loop class="bg-video">
+                    <source src="videos/banner.mp4" type="video/mp4">
+                </video>
+                <div class="bg-overlay"></div>
+                <div class="content container">
+                   
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo/whyvegashawaii.png" alt="">
+                        </a>
+                    </div>
+                    </a>
+                    <div class="team-pic">
+                        <img src="img/team_pic.png" alt="">
+                    </div>
+                    <div class="links">
+                        <div class="btn-group-vertical btn-group-block">
+                            <a href="team.html" class="btn btn-primary mb-2">Our Team</a>
+                            <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+                <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item d-block d-md-none active">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item  d-block d-md-none">
+                            <a class="nav-link" href="testimonies.html">Testimonies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="properties/neighborhood.html">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="financing.html">Financing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+
+    <div class="container pt-5 pb-5">
+      <div class="col-lg-12" id="news">
+        <h1 class="page-title">Events</h1>
+          <div class="container">
+
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="single-blog">
+                    <div class="single-blog-img">
+                        <a href="blog_single.html"><img src="img/events/event-photo1.jpg" alt="Blog Image"></a>
+                    </div>
+                    <div class="blog-content-box">
+                        <div class="blog-post-date">
+                            <span>18</span>
+                            <span>Aug 2019</span>
+                        </div>
+                        <div class="blog-content">
+                          <h4><a href="blog_single.html">Free Homebuyer Seminar</a></h4>
+                            <div class="meta-post">
+                                <span class="author"><strong>Speaker: </strong>Barbie Y. Hee</span>
+                                <!-- <span><a href="#">8 Comments</a></span>
+                                <span>12 likes</span> -->
+                            </div>
+                            <div class="meta-post">
+                                <span class="author"><strong>Location:</strong> Real State Learning Center, 4510 Salt Lake BLVD, Suit B4, Honolulu, HI 96818 (Stadium Mall)</span>
+                            </div>
+                            <div class="exerpt">
+                                Sample sentence about the event loremipsum Namnec tellus odio tincidunt auctor ornare that odio.
+                                vitae erat consequat auctor eu in aelit. Class aptent 
+                                sociosqu ad litora torquent per conubia nostra...
+                            </div>
+                            <a href="blog_single.html" class="btn-two">Read More</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="single-blog">
+                    <div class="single-blog-img">
+                        <a href="blog_single.html"><img src="img/events/event-photo2.jpg" alt="Blog Image"></a>
+                    </div>
+                    <div class="blog-content-box">
+                        <div class="blog-post-date">
+                            <span>30</span>
+                            <span>May 2019</span>
+                        </div>
+                        <div class="blog-content">
+                          <h4><a href="blog_single.html">Sample Seminar Title</a></h4>
+                            <div class="meta-post">
+                                <span class="author"><strong>Speaker: </strong>David Sur</span>
+                                <!-- <span><a href="#">8 Comments</a></span>
+                                <span>12 likes</span> -->
+                            </div>
+                            <div class="meta-post">
+                                <span class="author"><strong>Location:</strong> Real State Learning Center, 4510 Salt Lake BLVD, Suit B4, Honolulu, HI 96818 (Stadium Mall)</span>
+                            </div>
+                          <div class="exerpt">
+                                Sample sentence about the event loremipsum Namnec tellus odio tincidunt auctor ornare that odio.
+                                vitae erat consequat auctor eu in aelit. Class aptent 
+                                sociosqu ad litora torquent per conubia nostra....
+                            </div>
+                            <a href="blog_single.html" class="btn-two">Read More</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="single-blog">
+                    <div class="single-blog-img">
+                        <a href="blog_single.html"><img src="img/events/event-photo3.jpg" alt="Blog Image"></a>
+                    </div>
+                    <div class="blog-content-box">
+                        <div class="blog-post-date">
+                            <span>18</span>
+                            <span>Aug 2019</span>
+                        </div>
+                        <div class="blog-content">
+                          <h4><a href="blog_single.html">Free Homebuyer Seminar</a></h4>
+                            <div class="meta-post">
+                                <span class="author"><strong>Speaker: </strong>Steven Tagawa</span>
+                                <!-- <span><a href="#">8 Comments</a></span>
+                                <span>12 likes</span> -->
+                            </div>
+                            <div class="meta-post">
+                                <span class="author"><strong>Location:</strong> Real State Learning Center, 4510 Salt Lake BLVD, Suit B4, Honolulu, HI 96818 (Stadium Mall)</span>
+                            </div>
+                            <div class="exerpt">
+                                Sample sentence about the event loremipsum Namnec tellus odio tincidunt auctor ornare that odio.
+                                vitae erat consequat auctor eu in aelit. Class aptent 
+                                sociosqu ad litora torquent per conubia nostra...
+                            </div>
+                            <a href="blog_single.html" class="btn-two">Read More</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="single-blog">
+                    <div class="single-blog-img">
+                        <a href="blog_single.html"><img src="img/events/event-photo4.jpg" alt="Blog Image"></a>
+                    </div>
+                    <div class="blog-content-box">
+                        <div class="blog-post-date">
+                            <span>30</span>
+                            <span>May 2019</span>
+                        </div>
+                        <div class="blog-content">
+                          <h4><a href="blog_single.html">Sample Seminar Title</a></h4>
+                            <div class="meta-post">
+                                <span class="author"><strong>Speaker: </strong>Darrell Kimura</span>
+                                <!-- <span><a href="#">8 Comments</a></span>
+                                <span>12 likes</span> -->
+                            </div>
+                            <div class="meta-post">
+                                <span class="author"><strong>Location:</strong> Real State Learning Center, 4510 Salt Lake BLVD, Suit B4, Honolulu, HI 96818 (Stadium Mall)</span>
+                            </div>
+                          <div class="exerpt">
+                                Sample sentence about the event loremipsum Namnec tellus odio tincidunt auctor ornare that odio.
+                                vitae erat consequat auctor eu in aelit. Class aptent
+                                sociosqu ad litora torquent per conubia nostra....
+                            </div>
+                            <a href="blog_single.html" class="btn-two">Read More</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+      </div>
+    </div>
+
+
+    <div class="footer bg-primary p-5">
+      <div class="bg-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h3 class="text-white">Las Vegas Happenings</h3>
+          </div>
+          <div class="col-12 col-lg-4 text-white">
+            <ul>
+              <li><a href="#" class="text-white h5">News</a></li>
+              <li><a href="#" class="text-white h5">Weather</a></li>
+              <li><a href="#" class="text-white h5">Food</a></li>
+              <li><a href="#" class="text-white h5">Sports</a></li>
+              <li><a href="#" class="text-white h5">Events</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 text-center">
+            <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
