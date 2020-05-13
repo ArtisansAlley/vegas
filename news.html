@@ -50,19 +50,25 @@
         <div class="row no-gutters p-0">         
             <div class="banner order-2 order-md-1 col-12">
                 <div class="shadow"></div>
+                <video autoplay muted loop class="bg-video">
+                    <source src="videos/banner.mp4" type="video/mp4">
+                </video>
                 <div class="bg-overlay"></div>
-                
                 <div class="content container">
+                   
                     <div class="logo">
-                        <img class="logo" src="img/logo/whyvegashawaii.png" alt="">
+                        <a href="index.html">
+                            <img src="img/logo/whyvegashawaii.png" alt="">
+                        </a>
                     </div>
+                    </a>
                     <div class="team-pic">
                         <img src="img/team_pic.png" alt="">
                     </div>
                     <div class="links">
                         <div class="btn-group-vertical btn-group-block">
-                           <button class="btn btn-primary mb-2">Our Team</button>
-                           <button class="btn btn-primary">Testimonies</button>
+                            <a href="index.html" class="btn btn-primary mb-2">Our Team</a>
+                            <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
                         </div>
                     </div>
                 </div>
@@ -73,20 +79,26 @@
                 </button>
                 <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
+                        <li class="nav-item d-block d-md-none active">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item  d-block d-md-none">
+                            <a class="nav-link" href="testimonies.html">Testimonies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="properties/neighborhood.html">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="financing.html">Financing</a>
+                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Financing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="news.html">News</a>
                         </li>
                     </ul>
                 </div> 
@@ -103,8 +115,8 @@
                       <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestiae excepturi delectus modi aperiam, fugit maiores temporibus esse illum, corrupti reiciendis et quam dolore atque, assumenda mollitia voluptatibus deleniti unde?</p>
                     </div>
                   </div>
-                <div class="card-deck">
-                    <div class="card">
+                <div class="card-deck row no-gutters">
+                    <div class="card col-lg-4">
                         <div class="card-img-top">
                             <div class="overlay"></div>
                         </div>
@@ -118,7 +130,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-lg-4">
                         <div class="card-img-top">
                             <div class="overlay"></div>
                         </div>
@@ -132,7 +144,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-lg-4">
                         <div class="card-img-top">
                             <div class="overlay"></div>
                         </div>
@@ -148,10 +160,29 @@
                     </div>
                 </div>
             </div>
-
-                  
         </div>
-
+<div class="footer bg-primary p-5">
+      <div class="bg-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h3 class="text-white">Las Vegas Happenings</h3>
+          </div>
+          <div class="col-12 col-lg-4 text-white">
+            <ul>
+              <li><a href="#" class="text-white h5">News</a></li>
+              <li><a href="#" class="text-white h5">Weather</a></li>
+              <li><a href="#" class="text-white h5">Food</a></li>
+              <li><a href="#" class="text-white h5">Sports</a></li>
+              <li><a href="#" class="text-white h5">Events</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 text-center">
+            <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/script.js"></script>
     </body>

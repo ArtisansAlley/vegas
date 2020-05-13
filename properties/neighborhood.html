@@ -15,54 +15,66 @@
 <body>
   <!-- Header -->
   <div class="row no-gutters p-0">
-    <div class="banner order-2 order-md-1 col-12">
-      <div class="shadow"></div>
-      <div class="bg-overlay"></div>
-
-      <div class="content container">
-        <div class="logo">
-          <img class="logo" src="../img/logo/whyvegashawaii.png" alt="">
+            <div class="banner order-2 order-md-1 col-12">
+                <div class="shadow"></div>
+                <video autoplay muted loop class="bg-video">
+                    <source src="../videos/banner.mp4" type="video/mp4">
+                </video>
+                <div class="bg-overlay"></div>
+                <div class="content container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="../img/logo/whyvegashawaii.png" alt="">
+                        </a>
+                    </div>
+                    </a>
+                    <div class="team-pic">
+                        <img src="../img/team_pic.png" alt="">
+                    </div>
+                    <div class="links">
+                        <div class="btn-group-vertical btn-group-block">
+                            <a href="../team.html" class="btn btn-primary mb-2">Our Team</a>
+                            <a href="../testimonies.html" class="btn btn-primary">Testimonies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+                <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item d-block d-md-none ">
+                            <a class="nav-link" href="../team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item  d-block d-md-none">
+                            <a class="nav-link" href="../testimonies.html">Testimonies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../events.html">Events</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../properties/neighborhood.html">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../financing.html">Financing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news.html">News</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
         </div>
-        <div class="team-pic">
-          <img src="../img/team_pic.png" alt="">
-        </div>
-        <div class="links">
-          <div class="btn-group-vertical btn-group-block">
-            <button class="btn btn-primary mb-2">Our Team</button>
-            <button class="btn btn-primary">Testimonies</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars text-white"></i>
-      </button>
-      <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Properties</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Financing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <h1 class="text-center text-primary display-1 py-2">Las Vegas Properties</h1>
-  <h2 class="text-center text-primary">Neighborhoods</h2>
+        
+<div class="container pt-5 pb-5">
+      <div class="col-lg-10" id="news">
+  <h1 class="page-title">Las Vegas Neighborhoods</h1>
+  <!-- <h2 class="text-center text-primary">Neighborhoods</h2> -->
   <div class="container py-5">
     <div class="card p-3 rounded-0 mb-5">
       <div class="row">
@@ -85,7 +97,7 @@
                 <img class="w-100 img-fluid" src="../img/properties.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="w-100 img-fluid" src="../img/team_pic.png" alt="Third slide">
+                <img class="w-100 img-fluid" src="../img/team_with_bg.jpg" alt="Third slide">
               </div>
             </div>
           </div>
@@ -113,7 +125,7 @@
                 <img class="w-100 img-fluid" src="../img/properties.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="w-100 img-fluid" src="../img/team_pic.png" alt="Third slide">
+                <img class="w-100 img-fluid" src="../img/team_with_bg.jpg" alt="Third slide">
                 <div class="carousel-caption">
                   <h5>Properties Title</h5>
                   <p>Properties Description</p>
@@ -145,7 +157,7 @@
                 <img class="w-100 img-fluid" src="../img/properties.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="w-100 img-fluid" src="../img/team_pic.png" alt="Third slide">
+                <img class="w-100 img-fluid" src="../img/team_with_bg.jpg" alt="Third slide">
               </div>
             </div>
           </div>
@@ -154,6 +166,8 @@
     </div>
     <a href="map.html" class="btn btn-primary float-right">View Map</a>
   </div>
+  </div>
+</div>
 
   <div class="footer bg-primary p-5">
     <div class="bg-overlay"></div>

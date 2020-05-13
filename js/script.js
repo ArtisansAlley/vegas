@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $navbar = $('#navbar');
-    var navBarOffset = $navbar.offset().top;
+    var navBarOffset = $('.banner').height();
+
+    console.log(navBarOffset)
 
     $(window).scroll(function(e) {
         $navbar = $('#navbar');
@@ -28,7 +30,9 @@ $(document).ready(function() {
         else {
             $navbarContent.animate({
                 marginLeft:'-100vw'
-            },200).removeClass('show');
+            },200, function() {
+                $navbarContent.removeAttr('style').removeClass('show');;
+            });
             $(this).html('<i class="fas fa-bars text-white"></i>');
             $overlay.fadeOut();
         }
