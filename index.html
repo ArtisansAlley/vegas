@@ -1,141 +1,136 @@
 <html>
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-    <style>
-      .overlay {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 30%;
-        background-image: linear-gradient(
-          to bottom,
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <style>
+    .overlay {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 30%;
+      background-image: linear-gradient(to bottom,
           rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 1)
-        );
-      }
+          rgba(0, 0, 0, 1));
+    }
 
-      .carousel-item {
-        height: 55vh;
-      }
-    </style>
-  </head>
+    .carousel-item {
+      min-height: 70vh;
+    }
 
-  <body>
-    <!-- Header -->
-        <div class="row no-gutters p-0">         
-            <div class="banner order-2 order-md-1 col-12">
-                <div class="shadow"></div>
-                <video autoplay muted loop class="bg-video">
-                    <source src="videos/banner.mp4" type="video/mp4">
-                </video>
-                <div class="bg-overlay"></div>
-                <div class="content container">
-                   
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo/whyvegashawaii.png" alt="">
-                        </a>
-                    </div>
-                    </a>
-                    <div class="team-pic">
-                        <img src="img/team_pic.png" alt="">
-                    </div>
-                    <div class="links">
-                        <div class="btn-group-vertical btn-group-block">
-                            <a href="team.html" class="btn btn-primary mb-2">Our Team</a>
-                            <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars text-white"></i>
-                </button>
-                <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item d-block d-md-none active">
-                            <a class="nav-link" href="team.html">Our Team</a>
-                        </li>
-                        <li class="nav-item  d-block d-md-none">
-                            <a class="nav-link" href="testimonies.html">Testimonies</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="properties/neighborhood.html">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="financing.html">Financing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-                    </ul>
-                </div> 
-            </nav>
+    .carousel-imgs {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform-origin: center center 0;
+      min-height: 70vh;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="row no-gutters p-0">
+    <div class="banner order-2 order-md-1 col-12">
+      <div class="shadow"></div>
+      <video autoplay muted loop class="bg-video">
+        <source src="videos/banner.mp4" type="video/mp4">
+      </video>
+      <div class="bg-overlay"></div>
+      <div class="content container">
+
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo/whyvegashawaii.png" alt="">
+          </a>
         </div>
-    <div class="container  py-5">
-      <div class="co-lg-10">
+        </a>
+        <div class="team-pic">
+          <img src="img/team_pic.png" alt="">
+        </div>
+        <div class="links">
+          <div class="btn-group-vertical btn-group-block">
+            <a href="team.html" class="btn btn-primary mb-2">Our Team</a>
+            <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item d-block d-md-none active">
+            <a class="nav-link" href="team.html">Our Team</a>
+          </li>
+          <li class="nav-item  d-block d-md-none">
+            <a class="nav-link" href="testimonies.html">Testimonies</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="properties/neighborhood.html">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="financing.html">Financing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container  py-5">
+    <div class="co-lg-10">
       <h1 class="page-title">What happens in Vegas...</h1>
-      <div
-        class="card bg-primary text-center w-20 border-0 rounded-0 pt-2 pb-1 my-3 text-white"
-      >
+      <div class="card bg-primary text-center w-20 border-0 rounded-0 pt-2 pb-1 my-3 text-white">
         <h6>This week is going to be great!</h6>
       </div>
       <h1 class="text-center text-primary display-4">Events</h1>
-      <div class="row mb-5">
+      <div class="row mb-5 contents">
         <div class="col-lg-8">
-          <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-ride="carousel"
-          >
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/events.jpg"
-                  alt="First slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/events/event-photo1.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
-                  <h5>Event Title</h5>
+                  <h5>Free Homebuyer Seminar</h5>
                   <p>Event Description</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/properties.jpg"
-                  alt="Second slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/events/event-photo2.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
-                  <h5>Event Title</h5>
+                  <h5>Sample Seminar Title</h5>
                   <p>Event Description</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/team_with_bg.jpg"
-                  alt="Third slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/events/event-photo3.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
-                  <h5>Event Title</h5>
+                  <h5>Free Homebuyer Seminar</h5>
+                  <p>Event Description</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-imgs" style="background-image:url('img/events/event-photo4.jpg')"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                  <h5>Seminar Title</h5>
                   <p>Event Description</p>
                 </div>
               </div>
@@ -143,59 +138,43 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Upcoming Events</h3>
           </button>
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Register</h3>
           </button>
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>FAQS</h3>
           </button>
         </div>
       </div>
       <h1 class="text-center text-primary display-4">Properties</h1>
-      <div class="row mb-5">
+      <div class="row mb-5 contents">
         <div class="col-lg-8">
-          <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-ride="carousel"
-          >
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/events.jpg"
-                  alt="First slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/properties/general/Anthem Henderson .jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
-                  <h5>Properties Title</h5>
+                  <h5>Anthem Henderson</h5>
                   <p>Properties Description</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/properties.jpg"
-                  alt="Second slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/properties/general/Cadence SFR.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
-                  <h5>Properties Title</h5>
+                  <h5>Cadence SFR</h5>
                   <p>Properties Description</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/team_with_bg.jpg"
-                  alt="Third slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/properties/general/Summerlin $462K Xpand.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
-                  <h5>Properties Title</h5>
+                  <h5>Summerlin $462K Xpand</h5>
                   <p>Properties Description</p>
                 </div>
               </div>
@@ -203,32 +182,24 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Neighborhoods</h3>
           </button>
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Luxury</h3>
           </button>
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Age Restricted</h3>
           </button>
         </div>
       </div>
       <h1 class="text-center text-primary display-4">Financing</h1>
-      <div class="row mb-5">
+      <div class="row mb-5 contents">
         <div class="col-lg-8">
-          <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-ride="carousel"
-          >
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/events.jpg"
-                  alt="First slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/events.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
                   <h5>Finance Title</h5>
@@ -236,11 +207,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/properties.jpg"
-                  alt="Second slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/properties.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
                   <h5>Finance Title</h5>
@@ -248,11 +215,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  class="w-100 img-fluid"
-                  src="img/team_with_bg.jpg"
-                  alt="Third slide"
-                />
+                <div class="carousel-imgs" style="background-image:url('img/team_with_bg.jpg')"></div>
                 <div class="overlay"></div>
                 <div class="carousel-caption">
                   <h5>Finance Title</h5>
@@ -263,13 +226,13 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Loan Programs</h3>
           </button>
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Request Info</h3>
           </button>
-          <button class="btn btn-primary p-5 w-100">
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Apply Now!</h3>
           </button>
         </div>
@@ -277,33 +240,34 @@
     </div>
   </div>
 
-    <div class="footer bg-primary p-5">
-      <div class="bg-overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-4">
-            <h3 class="text-white">Las Vegas Happenings</h3>
-          </div>
-          <div class="col-12 col-lg-4 text-white">
-            <ul>
-              <li><a href="#" class="text-white h5">News</a></li>
-              <li><a href="#" class="text-white h5">Weather</a></li>
-              <li><a href="#" class="text-white h5">Food</a></li>
-              <li><a href="#" class="text-white h5">Sports</a></li>
-              <li><a href="#" class="text-white h5">Events</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-4 text-center">
-            <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" />
-          </div>
+  <div class="footer bg-primary p-5">
+    <div class="bg-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h3 class="text-white">Las Vegas Happenings</h3>
+        </div>
+        <div class="col-12 col-lg-4 text-white">
+          <ul>
+            <li><a href="#" class="text-white h5">News</a></li>
+            <li><a href="#" class="text-white h5">Weather</a></li>
+            <li><a href="#" class="text-white h5">Food</a></li>
+            <li><a href="#" class="text-white h5">Sports</a></li>
+            <li><a href="#" class="text-white h5">Events</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" />
         </div>
       </div>
     </div>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-      $(".carousel").carousel();
-    </script>
-  </body>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(".carousel").carousel();
+  </script>
+</body>
+
 </html>
