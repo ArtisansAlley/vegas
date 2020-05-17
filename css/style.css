@@ -232,3 +232,7 @@ h6 {
 .text-secondary{
   color: #043d5cde !important;
 }
+
+.bg-secondary{
+  background-color: #043d5cde !important;;
+}
