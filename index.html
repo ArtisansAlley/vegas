@@ -29,16 +29,27 @@
       min-height: 70vh;
     }
 
-    #events{
-      background-color: #e5b400 !important;
-      color: #24231e !important;
-      border-color: #af8900 !important;
+    .headline {
+      position: relative !important;
     }
-
-    #events:hover{
-      background-color: #043d5c !important;
-      border-color: #043d5c !important;
-      color: white !important;
+    .headline .headline-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.9;
+      /* background-color: black; */
+      background: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
+    }
+    .headline .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('img/events/event-photo4.jpg');
+      background-size: cover;
     }
   </style>
 </head>
@@ -97,18 +108,35 @@
             <a class="nav-link" href="financing.html">Financing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="news.html">News</a>
+            <a class="nav-link" href="news.html">What Happens in Vegas</a>
           </li>
         </ul>
       </div>
     </nav>
   </div>
-  <div class="container  py-5">
-    <div class="co-lg-10">
-      <h1 class="page-title">What happens in Vegas...</h1>
-      <div class="card bg-primary text-center w-20 border-0 rounded-0 pt-2 pb-1 my-3 text-white">
-        <h6>This week is going to be great!</h6>
+
+  <div class="container py-5">
+    <div class="jumbotron headline ">
+      <div class="bg"></div>
+      <div class="headline-overlay"></div>
+      <div class="col-lg-7 text-white">
+        <h4 class="mb-0 text-primary">What happens in vegas...</h4>
+        <h1 class="display-4">News Title</h1>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ea tempora, aliquid, non, fugit cum ut pariatur earum explicabo illo odio quod dolor nemo aliquam architecto? Tenetur commodi sequi ut.
+        </p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Read more</a>
+        </p>
       </div>
+    </div>
+  </div>
+
+  <div class="container  py-0">
+    <div class="co-lg-10">
+      
+     
+
       <h1 class="text-center text-primary display-4">Events</h1>
       <div class="row mb-5 contents">
         <div class="col-lg-8">
@@ -150,16 +178,13 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <button id="events" class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-calendar-alt h1"></i>
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Upcoming Events</h3>
           </button>
-          <button id="events" class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-user-edit h1"></i>
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>Register</h3>
           </button>
-          <button id="events" class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-scroll h1"></i>
+          <button class="btn btn-primary w-100" style="height: 33.33%;">
             <h3>FAQS</h3>
           </button>
         </div>
@@ -200,15 +225,12 @@
         </div>
         <div class="col-lg-4">
           <button class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-home h1"></i>
             <h3>Neighborhoods</h3>
           </button>
           <button class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-gem h1"></i>
             <h3>Luxury</h3>
           </button>
           <button class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-users h1"></i>
             <h3>Age Restricted</h3>
           </button>
         </div>
@@ -247,15 +269,12 @@
         </div>
         <div class="col-lg-4">
           <button class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-handshake h1"></i>
             <h3>Loan Programs</h3>
           </button>
           <button class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-info-circle h1"></i>
             <h3>Request Info</h3>
           </button>
           <button class="btn btn-primary w-100" style="height: 33.33%;">
-            <i class="fas fa-check-circle h1"></i>
             <h3>Apply Now!</h3>
           </button>
         </div>
@@ -263,7 +282,7 @@
     </div>
   </div>
 
-  <div class="footer bg-primary py-4">
+  <div class="footer bg-dark py-4">
     <div class="bg-overlay"></div>
     <div class="container">
       <div class="row">
@@ -298,11 +317,33 @@
       </div>
     </div>
   </div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="sign-up">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>Seminars Sign-Up</h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
   <script>
     $(".carousel").carousel();
+
   </script>
 </body>
 

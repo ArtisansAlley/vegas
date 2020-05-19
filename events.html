@@ -8,48 +8,33 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <style>
-      #news .card-img-top {
-        height: 150px;
-        background: url("img/banner.jpeg");
-        background-size: cover;
-        border-radius: 0 !important;
-        position: relative;
-      }
-      #news .headline {
-        position: relative;
-        height: 200px;
-        margin-bottom: 1.5rem !important;
-      }
-      .headline > .overlay {
-        background: black;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.5;
-        z-index: 1;
-      }
-      #news .headline .container {
-        position: absolute;
-        bottom: 0;
-        z-index: 2;
-        color: white;
-      }
-      #news .card-deck {
-        margin-left: 1px;
-        margin-right: 1px;
-      }
-      #news .card-deck .card {
-        margin-left: 1px;
-        margin-right: 1px;
-        border: 0 !important;
-      }
 
-        .single-blog-img {
-    overflow: hidden;
+.single-blog-img {
+    position: relative;
+    z-index: 1;
 }
-
+.single-blog-img > .sign-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #3791c08c;
+    opacity: 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.sign-up-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
 .single-blog-img a img {
     width: 100%;
     -webkit-transition: .3s;
@@ -58,19 +43,23 @@
     -o-transition: .3s;
     transition: .3s;
 }
-
+.single-blog:hover .single-blog-img > .sign-up,
 .single-blog:hover .single-blog-img a img {
     -webkit-transform: scale(1.09);
     -moz-transform: scale(1.09);
     -ms-transform: scale(1.09);
     -o-transform: scale(1.09);
     transform: scale(1.09);
+    cursor: pointer;
+    opacity: 1;
 }
 .single-blog-img img {
     width: 100%;
 }
 
 .blog-content-box {
+    position: relative;
+    z-index: 3  ;
     padding-left: 25px;
     padding-top: 27px;
     margin-left: 34px;
@@ -208,7 +197,7 @@
                             <a class="nav-link" href="financing.html">Financing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
+                            <a class="nav-link" href="news.html">What Happens in Vegas</a>
                         </li>
                     </ul>
                 </div> 
@@ -223,7 +212,13 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
                 <div class="single-blog">
-                    <div class="single-blog-img">
+                    <div class="single-blog-img">    
+                        <div class="sign-up">
+                            <button class="btn sign-up-btn text-white" data-toggle="modal" data-target="#sign-up">
+                                <h3 class="h1 mb-0"><i class="fas fa-user-plus"></i></h3>
+                                <h3 class="h1">Sign up</h3>
+                            </button>
+                        </div>
                         <a href="blog_single.html"><img src="img/events/event-photo1.jpg" alt="Blog Image"></a>
                     </div>
                     <div class="blog-content-box">
@@ -254,6 +249,12 @@
               <div class="col-sm-6 col-xs-12">
                 <div class="single-blog">
                     <div class="single-blog-img">
+                        <div class="sign-up">
+                            <button class="btn sign-up-btn text-white" data-toggle="modal" data-target="#sign-up">
+                                <h3 class="h1 mb-0"><i class="fas fa-user-plus"></i></h3>
+                                <h3 class="h1">Sign up</h3>
+                            </button>
+                        </div>
                         <a href="blog_single.html"><img src="img/events/event-photo2.jpg" alt="Blog Image"></a>
                     </div>
                     <div class="blog-content-box">
@@ -287,6 +288,12 @@
               <div class="col-sm-6 col-xs-12">
                 <div class="single-blog">
                     <div class="single-blog-img">
+                        <div class="sign-up">
+                            <button class="btn sign-up-btn text-white" data-toggle="modal" data-target="#sign-up">
+                                <h3 class="h1 mb-0"><i class="fas fa-user-plus"></i></h3>
+                                <h3 class="h1">Sign up</h3>
+                            </button>
+                        </div>
                         <a href="blog_single.html"><img src="img/events/event-photo3.jpg" alt="Blog Image"></a>
                     </div>
                     <div class="blog-content-box">
@@ -317,6 +324,12 @@
               <div class="col-sm-6 col-xs-12">
                 <div class="single-blog">
                     <div class="single-blog-img">
+                        <div class="sign-up">
+                            <button class="btn sign-up-btn text-white" data-toggle="modal" data-target="#sign-up">
+                                <h3 class="h1 mb-0"><i class="fas fa-user-plus"></i></h3>
+                                <h3 class="h1">Sign up</h3>
+                            </button>
+                        </div>
                         <a href="blog_single.html"><img src="img/events/event-photo4.jpg" alt="Blog Image"></a>
                     </div>
                     <div class="blog-content-box">
@@ -376,7 +389,93 @@
       </div>
     </div>
 
+    <div class="modal fade" tabindex="-1" role="dialog" id="sign-up">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Seminar Sign-Up</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body bg-light">
+              <form action="">
+                  
+                <div class="form-group row">
+                    <div class="col-lg-6">
+                        <label class="h5" for="">First Name : </label>
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="h5" for="">Last Name : </label>
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="h5" for="">Choose an Event : </label>
+                    <select name="" class="form-control">
+                        <option value="">Choose an Event</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="h5" for="">Phone: </label>
+                    <input type="text" class="form-control" placeholder="Phone(Required)">
+                </div>
+
+                <div class="form-group">
+                    <label class="h5" for="">Email: </label>
+                    <input type="text" class="form-control" placeholder="Email(Required)">
+                </div>
+
+                <div class="form-group">
+                    <label class="h5" for="">Address: </label>
+                    <input type="text" class="form-control" placeholder="Adress">
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-lg-4">
+                        <label class="h5" for="">City: </label>
+                        <input type="text" class="form-control" placeholder="City">
+                    </div>
+                    <div class="col-lg-4">
+                        <label class="h5" for="">State: </label>
+                        <input type="text" class="form-control" placeholder="State">
+                    </div>
+                    <div class="col-lg-4">
+                        <label class="h5" for="">Zipcode: </label>
+                        <input type="text" class="form-control" placeholder="Zipcode">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="h5" for="">How did you hear about us? : </label>
+                    <select name="" class="form-control">
+                        <option value="">How did you hear about us?</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="h5" for="">Message : </label>
+                    <textarea name="" id="" rows="3" class="form-control" placeholder="Message"></textarea>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Sign Me Up!</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>

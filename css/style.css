@@ -140,7 +140,7 @@ h6 {
 
 /* navbar */
 #navbar {
-  background-color: #043d5cde !important;
+  background-color: #043d5c !important;
   /* background-color: black; */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   padding: 0;
@@ -172,7 +172,7 @@ h6 {
   }
   .my-collapse {
     position: fixed;
-    background-color: #043d5cdee0;
+    background-color: #043d5cde;
     left: 0;
     top: 0;
     bottom: 0;
@@ -211,7 +211,7 @@ h6 {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .btn {
-  border-radius: 0 !important;
+  //border-radius: 0 !important;
 }
 .btn-primary {
   background-color: #043d5cde;
@@ -226,13 +226,15 @@ h6 {
   background-color: #043d5cde !important;
 }
 .text-primary {
-  color: #043d5cde !important;
-}
-
-.text-secondary{
   color: #d4451c !important;
 }
 
+.text-secondary{
+  /* color: #d4451c !important; */
+}
 .bg-secondary{
   background-color: #d4451c !important;
+}
+.bg-dark {
+  background-color: #05141c !important;
 }
