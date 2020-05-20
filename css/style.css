@@ -46,7 +46,8 @@ h6 {
 .banner .content {
   overflow: hidden;
 }
-.banner .bg-video {
+
+.bg-video {
   width: 100%;
   position: absolute;
   top: 0;
@@ -153,11 +154,11 @@ h6 {
 }
 #navbar .nav-item.active .nav-link {
   color: rgba(255, 255, 255, 1) !important;
-  background-color: #043d5c !important;
+  background-color: #d4451c !important;
 }
 #navbar .nav-item .nav-link:hover {
   color: rgba(255, 255, 255, 1);
-  background-color: #d4451c;
+  background-color: #043048;
   transition: all 0.3s;
 }
 @media (min-width: 992px) {
@@ -199,10 +200,13 @@ h6 {
 }
 
 .page-title {
-  border-left: 10px solid #043d5cde;
-  padding: 5px;
-  margin-bottom: 1.5rem;
-  font-size: 1.75rem;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 3rem;
+  font-weight: 100 !important;
+  text-transform: uppercase;
+  padding: 7px;
+  width: fit-content;
+  margin-bottom: 3rem !important;
 }
 .text-dark {
   color: #1d2124 !important;
@@ -242,4 +246,25 @@ h6 {
 }
 .bg-dark {
   background-color: #05141c !important;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+  z-index: 1;
+}
+.footer .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 2;
+  opacity: 0.9;
+}
+.footer .container {
+  position: relative;
+  z-index: 3;
 }
