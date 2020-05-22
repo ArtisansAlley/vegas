@@ -1,148 +1,155 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <style>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 300%;
+            background-size: cover;
+        }
+        
+        @media (max-width: 425px) {
             .profile {
-                width: 150px;
-                height: 150px;
-                border-radius: 300%;
-                background-size: cover;
+                width: 100px;
+                height: 100px;
             }
-            @media (max-width: 425px) {
-                .profile {
-                    width: 100px;
-                    height: 100px;
-                }
+        }
+        
+        #team .member {
+            cursor: pointer;
+        }
+        
+        #team .member:hover {
+            background-color: #043d5c;
+            border-color: #043d5c;
+            color: white !important;
+            transition: all 0.3s linear;
+        }
+        
+        #team .list-unstyled {
+            width: fit-content;
+        }
+        
+        @media (max-width: 425px) {
+            .team-pic {
+                width: 90% !important;
+                margin: auto;
+                position: absolute;
+                bottom: 0;
+                display: none;
             }
-             #team .member {
-                cursor: pointer;
+            #team .member {
+                border: 1px solid #dee2e6 !important;
             }
-            #team .member:hover {
-                background-color: #538FB2;
-                border-color: #538FB2;
-                color: white !important;
-                transition: all 0.3s linear;
-            }
-            #team .list-unstyled {
-                width: fit-content;
-            }
-            @media (max-width: 425px) {
-                .team-pic {
-                    width: 90% !important;
-                    margin: auto;
-                    position: absolute;
-                    bottom: 0;
-                    display: none;
-                }
-                #team .member {
-                    border: 1px solid #dee2e6 !important;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Header -->
-        <div class="row no-gutters p-0">         
-            <div class="banner order-2 order-md-1 col-12">
-                <div class="shadow"></div>
-                <video autoplay muted loop class="bg-video">
-                    <source src="videos/banner.mp4" type="video/mp4">
-                </video>
-                <div class="bg-overlay"></div>
-                <div class="content container">
-                   
-                    <div class="logo">
-          <a href="index.html">
-            <img src="img/logo/logo-animated.gif" alt="">
-            <img src="img/logo/whyvegashawaii.png" alt="">
-          </a>
-        </div>
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="row no-gutters p-0">
+        <div class="banner order-2 order-md-1 col-12">
+            <div class="shadow"></div>
+            <video autoplay muted loop class="bg-video">
+        <source src="videos/banner.mp4" type="video/mp4">
+      </video>
+            <div class="bg-overlay"></div>
+            <div class="content container">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo/logo-animated.gif" alt="">
+                        <img src="img/logo/whyvegashawaii.png" alt="">
                     </a>
-                    <div class="team-pic">
-                        <img src="img/team_pic.png" alt="">
-                    </div>
-                    <div class="links">
-                        <div class="btn-group-vertical btn-group-block">
-                            <a href="index.html" class="btn btn-primary mb-2">Our Team</a>
-                            <a href="#" class="btn btn-primary">Testimonies</a>
-                        </div>
+                </div>
+                </a>
+                <div class="team-pic">
+                    <img src="img/team_pic.png" alt="">
+                </div>
+                <div class="links">
+                    <div class="btn-group-vertical btn-group-block">
+                        <a href="team.html" class="btn btn-primary mb-2 active">Our Team</a>
+                        <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars text-white"></i>
-                </button>
-                <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item d-block d-md-none active">
-                            <a class="nav-link" href="index.html">Our Team</a>
-                        </li>
-                        <li class="nav-item  d-block d-md-none">
-                            <a class="nav-link" href="#">Testimonies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Financing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">What Happens in Vegas</a>
-                        </li>
-                    </ul>
-                </div> 
-            </nav>
         </div>
+        <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+      </button>
+            <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item d-block d-md-none active">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item  d-block d-md-none">
+                        <a class="nav-link" href="testimonies.html">Testimonies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties/properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financing.html">Financing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">What Happens in Vegas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-        <div class="container pt-5 pb-5 team">
-            <div class="row">
-                <div class="col-9 col-md-12 mx-auto"> 
-                    <div id="team">
-                        <img class="d-block mx-auto" src="img/logo/xpand.png" alt="" width="150">
-                        <div class="row mt-3">
-                            <div class="col-md-4 border-top border-left border-bottom mb-4 mb-lg-0 pt-3 member" data-link="darrell.html">
-                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/darrell.png');"></div>
-                                <h3 class="text-primary text-center">Darrell Kimura</h3> 
-                                
-                                <ul class="list-unstyled small mx-auto">
-                                    <li class="mt-1 text-center"></li>
-                                    <li class="mb-1"><i class="fas fa-id-card mr-1"></i>Hawaii RA RS-77249 Nevada Realtor S178102</li>
-                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.348.9773</li>
-                                    <li><i class="fas fa-envelope mr-1"></i>darrell@xpandrealty.com</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 border pt-3 mb-4 mb-lg-0 member" data-link="david.html">
-                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/david.jpg');"></div>
-                                <h3 class="text-primary text-center">David Sur</h3>
-                                <ul class="list-unstyled small mx-auto">
-                                    <li class="mb-1"><i class="fas fa-id-card mr-1"></i>Nevada Realtor S0187093 Hawaii RA RS-81829</li>
-                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.383.1134</li>
-                                    <li><i class="fas fa-envelope mr-1"></i>david@xpandrealty.com</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 border-top border-right border-bottom pt-3 member mb-4 mb-lg-0" data-link="barbie.html">
-                                <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/barbie.jpg');"></div>
-                                <h3 class="text-primary text-center">Barbie Y. Hee</h3>
-                                <ul class="list-unstyled small mx-auto">
-                                    <li class="mb-1"><i class="fas fa-id-card mr-1"></i>Hawaii RB-18438 Nevada Realtor BS.0145792</li>
-                                    <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.375.7483</li>
-                                    <li><i class="fas fa-envelope mr-1"></i>barbie@xpandrealty.com</li>
-                                </ul>
-                            </div>
+    <div class="container pt-5 pb-5 team">
+        <div class="row">
+            <div class="col-9 col-md-12 mx-auto">
+                <div id="team">
+                    <img class="d-block mx-auto" src="img/logo/xpand.png" alt="" width="150">
+                    <div class="row mt-3">
+                        <div class="col-md-4 border-top border-left border-bottom mb-4 mb-lg-0 pt-3 member" data-link="darrell.html">
+                            <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/darrell.png');"></div>
+                            <h3 class="text-primary text-center">Darrell Kimura</h3>
+
+                            <ul class="list-unstyled small mx-auto">
+                                <li class="mt-1 text-center"></li>
+                                <li class="mb-1"><i class="fas fa-id-card mr-1"></i>Hawaii RA RS-77249 Nevada Realtor S178102</li>
+                                <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.348.9773</li>
+                                <li><i class="fas fa-envelope mr-1"></i>darrell@xpandrealty.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 border pt-3 mb-4 mb-lg-0 member" data-link="david.html">
+                            <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/david.jpg');"></div>
+                            <h3 class="text-primary text-center">David Sur</h3>
+                            <ul class="list-unstyled small mx-auto">
+                                <li class="mb-1"><i class="fas fa-id-card mr-1"></i>Nevada Realtor S0187093 Hawaii RA RS-81829</li>
+                                <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.383.1134</li>
+                                <li><i class="fas fa-envelope mr-1"></i>david@xpandrealty.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 border-top border-right border-bottom pt-3 member mb-4 mb-lg-0" data-link="barbie.html">
+                            <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/barbie.jpg');"></div>
+                            <h3 class="text-primary text-center">Barbie Y. Hee</h3>
+                            <ul class="list-unstyled small mx-auto">
+                                <li class="mb-1"><i class="fas fa-id-card mr-1"></i>Hawaii RB-18438 Nevada Realtor BS.0145792</li>
+                                <li class="mb-1"><i class="fas fa-phone mr-1"></i>808.375.7483</li>
+                                <li><i class="fas fa-envelope mr-1"></i>barbie@xpandrealty.com</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="mt-5">
                         <img class="d-block mx-auto" src="img/logo/prmi.png" alt="" width="150">
-                        <div class="row mt-3" >
+                        <div class="row mt-3">
                             <div class="col-md-4 border pt-3  member" data-link="steven.html">
                                 <div class="profile mx-auto mb-3 border" style="background-image: url('img/team/steven.jpg');"></div>
                                 <h3 class="text-primary text-center mb-1">Steven Tagawa</h3>
@@ -157,20 +164,64 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/script.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('.member').click(function() {
-                    location.href='bios/' + $(this).attr('data-link');
-                }).mouseenter(function() {
-                    $(this).find('h3').removeClass('text-primary').addClass('text-light');
-                }).mouseleave(function() {
-                    $(this).find('h3').removeClass('text-light').addClass('text-primary');
-                });
-                
-            })
-        </script>
-    </body>
+    <div class="footer py-4" style="">
+        <div class="bg-overlay"></div>
+        <video autoplay muted loop class="bg-video">
+      <source src="videos/banner.mp4" type="video/mp4">
+    </video>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <!-- <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" /> -->
+                    <h3 class="text-white">About WhyVegasHawaii.COM</h3>
+                    <p class="text-white mt-3" style="font-size:small">
+                        Sample Company Short Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin est vitae sapien fermentum euismod. Nullam ullamcorper leo non arcu laoreet placerat. Nulla aliquet lorem eu purus placerat, lacinia feugiat leo
+                        blandit.
+                    </p>
+                    <h5 class="text-white">Our Contacts</h5>
+                    <div class="social-buttons">
+                        <button class="btn bg-secondary text-white"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-instagram"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-twitter"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fas fa-globe-americas"></i></button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-white">
+                    <h3 class="text-white">Recent Event</h3>
+                    <img src="img/events/event-photo1.jpg" class="w-75" alt="">
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3 class="text-white">Contact Us</h3>
+                    <form action="">
+                        <input type="text" class="form-control rounded-0 border-0" placeholder="Your Email">
+                        <textarea name="message" class="form-control rounded-0 border-0 my-1" id="message" cols="30" rows="3" placeholder="Your Message"></textarea>
+                        <button class="float-right btn bg-secondary rounded text-white"><i class="fas fa-paper-plane"></i> Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.member').click(function() {
+                location.href = 'bios/' + $(this).attr('data-link');
+            }).mouseenter(function() {
+                $(this).find('h3').removeClass('text-primary').addClass('text-light');
+            }).mouseleave(function() {
+                $(this).find('h3').removeClass('text-light').addClass('text-primary');
+            });
+
+        })
+    </script>
+
+
+</body>
+
 </html>

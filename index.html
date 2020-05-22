@@ -1,426 +1,580 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-  <style>
-    .overlay {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 30%;
-      background-image: linear-gradient(to bottom,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 1));
-    }
-
-    .carousel-item {
-      min-height: 70vh;
-    }
-
-    .carousel-imgs {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      transform-origin: center center 0;
-      min-height: 70vh;
-    }
-
-    .carousel-caption {
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 10%, rgb(0,0,0));
-    }
-
-    .headline {
-      position: relative !important;
-    }
-    .headline .headline-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0.9;
-      /* background-color: black; */
-      background: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
-    }
-
-    #events{
-      background-color: #e5b400 !important;
-      color: #24231e !important;
-      border-color: #af8900 !important;
-    }
-
-    #events:hover{
-      background-color: #043d5c !important;
-      border-color: #043d5c !important;
-      color: white !important;
-    }
-
-    .headline .bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url('img/events/event-photo4.jpg');
-      background-size: cover;
-    }
-
-    .propert-info {
-
-    }
-  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <style>
+        .overlay {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        }
+        
+        .carousel-item {
+            min-height: 70vh;
+        }
+        
+        .carousel-imgs {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform-origin: center center 0;
+            min-height: 70vh;
+        }
+        
+        .carousel-caption {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0));
+        }
+        
+        .headline {
+            position: relative !important;
+        }
+        
+        .headline .headline-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.9;
+            /* background-color: black; */
+            background: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0));
+        }
+        
+        #events {
+            background-color: #e5b400 !important;
+            color: #24231e !important;
+            border-color: #af8900 !important;
+        }
+        
+        #events:hover {
+            background-color: #043d5c !important;
+            border-color: #043d5c !important;
+            color: white !important;
+        }
+        
+        .headline .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('img/news/blog1.png');
+            background-size: cover;
+        }
+        
+        .propert-info {}
+    </style>
 </head>
 
 <body>
-  <!-- Header -->
-  <div class="row no-gutters p-0">
-    <div class="banner order-2 order-md-1 col-12">
-      <div class="shadow"></div>
-      <video autoplay muted loop class="bg-video">
+    <!-- Header -->
+    <div class="row no-gutters p-0">
+        <div class="banner order-2 order-md-1 col-12">
+            <div class="shadow"></div>
+            <video autoplay muted loop class="bg-video">
         <source src="videos/banner.mp4" type="video/mp4">
       </video>
-      <div class="bg-overlay"></div>
-      <div class="content container">
+            <div class="bg-overlay"></div>
+            <div class="content container">
 
-        <div class="logo">
-          <a href="index.html">
-            <img src="img/logo/logo-animated.gif" alt="">
-            <img src="img/logo/whyvegashawaii.png" alt="">
-          </a>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo/logo-animated.gif" alt="">
+                        <img src="img/logo/whyvegashawaii.png" alt="">
+                    </a>
+                </div>
+                </a>
+                <div class="team-pic">
+                    <img src="img/team_pic.png" alt="">
+                </div>
+                <div class="links">
+                    <div class="btn-group-vertical btn-group-block">
+                        <a href="team.html" class="btn btn-primary mb-2">Our Team</a>
+                        <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </a>
-        <div class="team-pic">
-          <img src="img/team_pic.png" alt="">
-        </div>
-        <div class="links">
-          <div class="btn-group-vertical btn-group-block">
-            <a href="team.html" class="btn btn-primary mb-2">Our Team</a>
-            <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
       </button>
-      <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item d-block d-md-none active">
-            <a class="nav-link" href="team.html">Our Team</a>
-          </li>
-          <li class="nav-item  d-block d-md-none">
-            <a class="nav-link" href="testimonies.html">Testimonies</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="properties/properties.html">Properties</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="financing.html">Financing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">What Happens in Vegas</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <div class="container py-5">
-    <div class="jumbotron headline ">
-      <div class="bg"></div>
-      <div class="headline-overlay"></div>
-      <div class="col-lg-7 text-white">
-        <h4 class="mb-0 text-primary">What happens in vegas...</h4>
-        <h1 class="display-4">News Title</h1>
-        <p class="lead">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ea tempora, aliquid, non, fugit cum ut pariatur earum explicabo illo odio quod dolor nemo aliquam architecto? Tenetur commodi sequi ut.
-        </p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Read more</a>
-        </p>
-      </div>
+            <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item d-block d-md-none active">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item  d-block d-md-none">
+                        <a class="nav-link" href="testimonies.html">Testimonies</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties/properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financing.html">Financing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">What Happens in Vegas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-  </div>
 
-  <div class="container  py-0">
-    <div class="co-lg-10">
-
-
-
-      <h1 class="text-center text-primary display-4">Events</h1>
-      <div class="row mb-5 contents">
-        <div class="col-lg-8">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-imgs" style="background-image:url('img/events/event-photo1.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Free Homebuyer Seminar</h5>
-                  <p>Event Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-imgs" style="background-image:url('img/events/event-photo2.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Sample Seminar Title</h5>
-                  <p>Event Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-imgs" style="background-image:url('img/events/event-photo3.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Free Homebuyer Seminar</h5>
-                  <p>Event Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-imgs" style="background-image:url('img/events/event-photo4.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Seminar Title</h5>
-                  <p>Event Description</p>
-                </div>
-              </div>
+    <div class="container py-5">
+        <div class="jumbotron headline ">
+            <div class="bg"></div>
+            <div class="headline-overlay"></div>
+            <div class="col-lg-7 text-white">
+                <h4 class="mb-0 text-primary">What happens in vegas...</h4>
+                <h1 class="display-4">MORTGAGE RATES ARE NEAR HISTORIC LOWS</h1>
+                <p class="lead">
+                    30-year fixed conventional mortgage rates continue to hover near historic lows as the effects from the Corona virus continue to weigh heavily on the economy. Lower mortgage rates not only provide homebuyers with more purchasing power, but also allow current
+                    mortgage holders to refinance and lower...
+                </p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Read more</a>
+                </p>
             </div>
-          </div>
         </div>
-        <div class="col-lg-4">
-          <button id="events" class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-calendar-alt h1"></i>
-            <h3>Upcoming Events</h3>
-          </button>
-          <button id="events" class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-user-edit h1"></i>
-            <h3>Register</h3>
-          </button>
-          <button id="events" class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-scroll h1"></i>
-            <h3>FAQS</h3>
-          </button>
-        </div>
-      </div>
-      <h1 class="text-center text-primary display-4">Properties</h1>
-      <div class="row mb-5 contents">
-        <div class="col-lg-8">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-imgs" style="background-image:url('img/properties/general/Anthem Henderson .jpg')">
-                </div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Anthem Henderson</h5>
-                  <ul class="list-inline property-info small">
-                    <li class="list-inline-item">
-                      <i class="fas fa-dollar-sign"></i> 450k
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-bed"></i> 7
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-toilet"></i> 3
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-ruler"></i> 250m<sup>2</sup>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-imgs" style="background-image:url('img/properties/general/Cadence SFR.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Cadence SFR</h5>
-                  <ul class="list-inline property-info small">
-                    <li class="list-inline-item">
-                      <i class="fas fa-dollar-sign"></i> 450k
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-bed"></i> 7
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-toilet"></i> 3
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-ruler"></i> 250m<sup>2</sup>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-imgs"
-                  style="background-image:url('img/properties/general/Summerlin $462K Xpand.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Summerlin $462K Xpand</h5>
-                  <ul class="list-inline property-info small">
-                    <li class="list-inline-item">
-                      <i class="fas fa-dollar-sign"></i> 450k
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-bed"></i> 7
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-toilet"></i> 3
-                    </li>
-                    <li class="list-inline-item">
-                      <i class="fas fa-ruler"></i> 250m<sup>2</sup>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-home h1"></i>
-            <h3>Neighborhoods</h3>
-          </button>
-          <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-gem h1"></i>
-            <h3>Luxury</h3>
-          </button>
-          <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-users h1"></i>
-            <h3>Age Restricted</h3>
-          </button>
-        </div>
-      </div>
-      <h1 class="text-center text-primary display-4">Financing</h1>
-      <div class="row mb-5 contents">
-        <div class="col-lg-8">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-imgs" style="background-image:url('img/events.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Finance Title</h5>
-                  <p>Finance Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-imgs" style="background-image:url('img/properties.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Finance Title</h5>
-                  <p>Finance Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-imgs" style="background-image:url('img/team_with_bg.jpg')"></div>
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                  <h5>Finance Title</h5>
-                  <p>Finance Description</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-handshake h1"></i>
-            <h3>Loan Programs</h3>
-          </button>
-          <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-info-circle h1"></i>
-            <h3>Request Info</h3>
-          </button>
-          <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
-            <i class="fas fa-check-circle h1"></i>
-            <h3>Apply Now!</h3>
-          </button>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="footer py-4" style="">
-    <div class="bg-overlay"></div>
-    <video autoplay muted loop class="bg-video">
+    <div class="container  py-0">
+        <div class="co-lg-10">
+
+
+
+            <h1 class="text-center text-primary display-4">Events</h1>
+            <div class="row mb-5 contents">
+                <div class="col-lg-8">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-imgs" style="background-image:url('img/events/event-photo1.jpg')"></div>
+                                <div class="overlay"></div>
+                                <div class="carousel-caption">
+                                    <h5>Free Homebuyer Seminar</h5>
+                                    <p>Event Description</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-imgs" style="background-image:url('img/events/event-photo2.jpg')"></div>
+                                <div class="overlay"></div>
+                                <div class="carousel-caption">
+                                    <h5>Sample Seminar Title</h5>
+                                    <p>Event Description</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-imgs" style="background-image:url('img/events/event-photo3.jpg')"></div>
+                                <div class="overlay"></div>
+                                <div class="carousel-caption">
+                                    <h5>Free Homebuyer Seminar</h5>
+                                    <p>Event Description</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-imgs" style="background-image:url('img/events/event-photo4.jpg')"></div>
+                                <div class="overlay"></div>
+                                <div class="carousel-caption">
+                                    <h5>Seminar Title</h5>
+                                    <p>Event Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="events.html">
+                        <button id="events" class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                          <i class="fas fa-calendar-alt h1"></i>
+                          <h3>Upcoming Events</h3>
+                        </button>
+                    </a>
+                    <button id="events" class="btn btn-primary w-100 rounded-0" style="height: 33.33%;" data-toggle="modal" data-target="#sign-up">
+                          <i class="fas fa-user-edit h1"></i>
+                          <h3>Register</h3>
+                    </button>
+                    <a href="events/events-faq.html">
+                        <button id="events" class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                              <i class="fas fa-scroll h1"></i>
+                              <h3>FAQS</h3>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <h1 class="text-center text-primary display-4">Properties</h1>
+            <div class="row mb-5 contents">
+                <div class="col-lg-8">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-imgs" style="background-image:url('img/properties/general/Anthem Henderson .jpg')">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="carousel-caption">
+                                    <h5>Anthem Henderson</h5>
+                                    <ul class="list-inline property-info small">
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-dollar-sign"></i> 450k
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-bed"></i> 7
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-toilet"></i> 3
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-ruler"></i> 250m<sup>2</sup>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-imgs" style="background-image:url('img/properties/general/Cadence SFR.jpg')"></div>
+                                <div class="overlay"></div>
+                                <div class="carousel-caption">
+                                    <h5>Cadence SFR</h5>
+                                    <ul class="list-inline property-info small">
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-dollar-sign"></i> 450k
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-bed"></i> 7
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-toilet"></i> 3
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-ruler"></i> 250m<sup>2</sup>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-imgs" style="background-image:url('img/properties/general/Summerlin $462K Xpand.jpg')"></div>
+                                <div class="overlay"></div>
+                                <div class="carousel-caption">
+                                    <h5>Summerlin $462K Xpand</h5>
+                                    <ul class="list-inline property-info small">
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-dollar-sign"></i> 450k
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-bed"></i> 7
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-toilet"></i> 3
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-ruler"></i> 250m<sup>2</sup>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="properties/properties.html">
+                        <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                          <i class="fas fa-home h1"></i>
+                          <h3>Neighborhoods</h3>
+                        </button>
+                    </a>
+                    <a href="properties/luxury.html">
+                        <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                        <i class="fas fa-gem h1"></i>
+                        <h3>Luxury</h3>
+                      </button>
+                    </a>
+                    <a href="properties/age-restricted.html">
+                        <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                        <i class="fas fa-users h1"></i>
+                        <h3>Age Restricted</h3>
+                      </button>
+                    </a>
+                </div>
+            </div>
+            <h1 class="text-center text-primary display-4">Financing</h1>
+            <div class="row mb-5 contents">
+                <div class="col-lg-8">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-imgs" style="background-image:url('img/events.jpg')"></div>
+                                <div class="overlay"></div>
+                                <!-- <div class="carousel-caption">
+                                    <h5>Finance Title</h5>
+                                    <p>Finance Description</p>
+                                </div> -->
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-imgs" style="background-image:url('img/properties.jpg')"></div>
+                                <div class="overlay"></div>
+                                <!-- <div class="carousel-caption">
+                                    <h5>Finance Title</h5>
+                                    <p>Finance Description</p>
+                                </div> -->
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-imgs" style="background-image:url('img/team_with_bg.jpg')"></div>
+                                <div class="overlay"></div>
+                                <!-- <div class="carousel-caption">
+                                    <h5>Finance Title</h5>
+                                    <p>Finance Description</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="finance/loan-programs.html">
+                        <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                          <i class="fas fa-handshake h1"></i>
+                          <h3>Loan Programs</h3>
+                        </button>
+                    </a>
+                    <a href="finance/loan-programs.html">
+                        <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                          <i class="fas fa-info-circle h1"></i>
+                          <h3>Request Info</h3>
+                        </button>
+                    </a>
+                    <a href="https://myloan.primeres.com/#/loan-officers/steven@hawaiilender" target="_blank">
+                        <button class="btn btn-primary w-100 rounded-0" style="height: 33.33%;">
+                          <i class="fas fa-check-circle h1"></i>
+                          <h3>Apply Now!</h3>
+                      </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer py-4" style="">
+        <div class="bg-overlay"></div>
+        <video autoplay muted loop class="bg-video">
       <source src="videos/banner.mp4" type="video/mp4">
     </video>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-5">
-          <!-- <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" /> -->
-          <h3 class="text-white">About WhyVegasHawaii.COM</h3>
-          <p class="text-white mt-3" style="font-size:small">
-            Sample Company Short Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin est vitae sapien fermentum
-            euismod. Nullam ullamcorper leo non arcu laoreet placerat. Nulla aliquet lorem eu purus placerat, lacinia
-            feugiat leo blandit.
-          </p>
-          <h5 class="text-white">Our Contacts</h5>
-          <div class="social-buttons">
-            <button class="btn bg-secondary text-white"><i class="fab fa-facebook-f"></i></button>
-            <button class="btn bg-secondary text-white"><i class="fab fa-instagram"></i></button>
-            <button class="btn bg-secondary text-white"><i class="fab fa-twitter"></i></button>
-            <button class="btn bg-secondary text-white"><i class="fas fa-globe-americas"></i></button>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <!-- <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" /> -->
+                    <h3 class="text-white">About WhyVegasHawaii.COM</h3>
+                    <p class="text-white mt-3" style="font-size:small">
+                        Sample Company Short Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin est vitae sapien fermentum euismod. Nullam ullamcorper leo non arcu laoreet placerat. Nulla aliquet lorem eu purus placerat, lacinia feugiat leo
+                        blandit.
+                    </p>
+                    <h5 class="text-white">Our Contacts</h5>
+                    <div class="social-buttons">
+                        <button class="btn bg-secondary text-white"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-instagram"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-twitter"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fas fa-globe-americas"></i></button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-white">
+                    <h3 class="text-white">Recent Event</h3>
+                    <img src="img/events/event-photo1.jpg" class="w-75" alt="">
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3 class="text-white">Contact Us</h3>
+                    <form action="">
+                        <input type="text" class="form-control rounded-0 border-0" placeholder="Your Email">
+                        <textarea name="message" class="form-control rounded-0 border-0 my-1" id="message" cols="30" rows="3" placeholder="Your Message"></textarea>
+                        <button class="float-right btn bg-secondary rounded text-white"><i class="fas fa-paper-plane"></i> Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-lg-4 text-white">
-          <h3 class="text-white">Recent Event</h3>
-            <img src="img/events/event-photo1.jpg" class="w-75" alt="">
-        </div>
-        <div class="col-12 col-lg-3">
-          <h3 class="text-white">Contact Us</h3>
-          <form action="">
-            <input type="text" class="form-control rounded-0 border-0" placeholder="Your Email" >
-            <textarea name="message" class="form-control rounded-0 border-0 my-1" id="message" cols="30" rows="3" placeholder="Your Message"></textarea>
-            <button class="float-right btn bg-secondary rounded text-white"><i class="fas fa-paper-plane"></i> Send</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="modal" tabindex="-1" role="dialog" id="sign-up">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="modal fade" tabindex="-1" role="dialog" id="sign-up">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Seminar Sign-Up</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form action="">
+
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <label class="h5" for="">First Name : </label>
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="h5" for="">Last Name : </label>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Choose an Event : </label>
+                            <select name="" class="form-control">
+                        <option value="">Choose an Event</option>
+                    </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Phone: </label>
+                            <input type="text" class="form-control" placeholder="Phone(Required)">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Email: </label>
+                            <input type="text" class="form-control" placeholder="Email(Required)">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Address: </label>
+                            <input type="text" class="form-control" placeholder="Adress">
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-lg-4">
+                                <label class="h5" for="">City: </label>
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="h5" for="">State: </label>
+                                <input type="text" class="form-control" placeholder="State">
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="h5" for="">Zipcode: </label>
+                                <input type="text" class="form-control" placeholder="Zipcode">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">How did you hear about us? : </label>
+                            <select name="" class="form-control">
+                        <option value="">How did you hear about us?</option>
+                    </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Message : </label>
+                            <textarea name="" id="" rows="3" class="form-control" placeholder="Message"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sign Me Up!</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <h2>Seminars Sign-Up</h2>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Save changes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    $(".carousel").carousel();
+    <!-- <div class="modal fade" tabindex="-1" role="dialog" id="apply_now">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Apply Now</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form action="">
 
-  </script>
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <label class="h5" for="">First Name : </label>
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="h5" for="">Last Name : </label>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Choose an Event : </label>
+                            <select name="" class="form-control">
+                        <option value="">Choose an Event</option>
+                    </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Phone: </label>
+                            <input type="text" class="form-control" placeholder="Phone(Required)">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Email: </label>
+                            <input type="text" class="form-control" placeholder="Email(Required)">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Address: </label>
+                            <input type="text" class="form-control" placeholder="Adress">
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-lg-4">
+                                <label class="h5" for="">City: </label>
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="h5" for="">State: </label>
+                                <input type="text" class="form-control" placeholder="State">
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="h5" for="">Zipcode: </label>
+                                <input type="text" class="form-control" placeholder="Zipcode">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">How did you hear about us? : </label>
+                            <select name="" class="form-control">
+                        <option value="">How did you hear about us?</option>
+                    </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="h5" for="">Message : </label>
+                            <textarea name="" id="" rows="3" class="form-control" placeholder="Message"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sign Me Up!</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(".carousel").carousel();
+    </script>
 </body>
 
 </html>

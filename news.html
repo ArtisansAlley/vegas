@@ -1,189 +1,212 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <style>
-            
-            #news .card-img-top {
-                height: 150px;
-                background: url('img/banner.jpeg');
-                background-size: cover;
-                border-radius: 0!important;
-                position: relative;
-            }
-            #news .headline {
-                position: relative;
-                height: 200px;
-                margin-bottom: 1.5rem!important;
-            }
-            .headline>.overlay {
-                background: black;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                opacity: 0.5;
-                z-index: 1;
-            }
-            #news .headline .container {
-                position: absolute;
-                bottom: 0;
-                z-index: 2;
-                color: white;
-            }
-            #news .card-deck {
-                margin-left: 1px;
-                margin-right: 1px;
-            }
-            #news .card-deck .card {
-                margin-left: 1px;
-                margin-right: 1px;
-                border: 0 !important;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Header -->
-        <div class="row no-gutters p-0">         
-            <div class="banner order-2 order-md-1 col-12">
-                <div class="shadow"></div>
-                <video autoplay muted loop class="bg-video">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        #news .card-img-top {
+            height: 150px;
+            background: url('img/banner.jpeg');
+            background-size: cover;
+            border-radius: 0!important;
+            position: relative;
+        }
+        
+        #news .headline {
+            position: relative;
+            height: 200px;
+            margin-bottom: 1.5rem!important;
+        }
+        
+        .headline>.overlay {
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        
+        #news .headline .container {
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            color: white;
+        }
+        
+        #news .card-deck {
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+        
+        #news .card-deck .card {
+            margin-left: 1px;
+            margin-right: 1px;
+            border: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="row no-gutters p-0">
+        <div class="banner order-2 order-md-1 col-12">
+            <div class="shadow"></div>
+            <video autoplay muted loop class="bg-video">
                     <source src="videos/banner.mp4" type="video/mp4">
                 </video>
-                <div class="bg-overlay"></div>
-                <div class="content container">
-                    <div class="logo">
-          <a href="index.html">
-            <img src="img/logo/logo-animated.gif" alt="">
-            <img src="img/logo/whyvegashawaii.png" alt="">
-          </a>
-        </div>
+            <div class="bg-overlay"></div>
+            <div class="content container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo/logo-animated.gif" alt="">
+                        <img src="img/logo/whyvegashawaii.png" alt="">
                     </a>
-                    <div class="team-pic">
-                        <img src="img/team_pic.png" alt="">
-                    </div>
-                    <div class="links">
-                        <div class="btn-group-vertical btn-group-block">
-                            <a href="index.html" class="btn btn-primary mb-2">Our Team</a>
-                            <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
-                        </div>
+                </div>
+                </a>
+                <div class="team-pic">
+                    <img src="img/team_pic.png" alt="">
+                </div>
+                <div class="links">
+                    <div class="btn-group-vertical btn-group-block">
+                        <a href="index.html" class="btn btn-primary mb-2">Our Team</a>
+                        <a href="testimonies.html" class="btn btn-primary">Testimonies</a>
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+        <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars text-white"></i>
                 </button>
-                <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item d-block d-md-none active">
-                            <a class="nav-link" href="team.html">Our Team</a>
-                        </li>
-                        <li class="nav-item  d-block d-md-none">
-                            <a class="nav-link" href="testimonies.html">Testimonies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="properties/properties.html">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="financing.html">Financing</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="news.html">What Happens in Vegas</a>
-                        </li>
-                    </ul>
-                </div> 
-            </nav>
-        </div>
+            <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item d-block d-md-none active">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item  d-block d-md-none">
+                        <a class="nav-link" href="testimonies.html">Testimonies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties/properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financing.html">Financing</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="news.html">What Happens in Vegas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-        <div class="container pt-5 pb-5">
-            <div class="col-lg-10" id="news">
-                <h1 class="page-title">What Happens in Vegas</h1>
-                <div class="headline jumbotron jumbotron-fluid" style="background:url('img/matthias-mullie-NF9s89qIaL0-unsplash.jpg');background-size:cover;">
-                    <div class="overlay"></div>
-                    <div class="container">
-                      <h3>Headline</h3>
-                      <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestiae excepturi delectus modi aperiam, fugit maiores temporibus esse illum, corrupti reiciendis et quam dolore atque, assumenda mollitia voluptatibus deleniti unde?</p>
+    <div class="container pt-5 pb-5">
+        <div class="col-lg-10" id="news">
+            <h1 class="page-title">What Happens in Vegas</h1>
+            <div class="headline jumbotron jumbotron-fluid" style="background:url('img/news/blog3.png');background-size:cover;">
+                <div class="overlay"></div>
+                <div class="container">
+                    <h3>Staggered reopening times.</h3>
+                    <p class="small">The Las Vegas Strip is home to some of the country’s highest-capacity hotels. They are already seeing a staggered reopening starting to take shape. As reported by ABC news, Nevada governor Steve Sisolak recently committed his state
+                        to joining the so-called Western States Pact, an agreement between several states in the western half of the nation to coordinate reopening plans. No major Las Vegas resort has confirmed an official opening date...</p>
+                </div>
+            </div>
+            <div class="card-deck row no-gutters">
+                <div class="card col-lg-4">
+                    <div class="card-img-top">
+                        <div class="overlay"></div>
                     </div>
-                  </div>
-                <div class="card-deck row no-gutters">
-                    <div class="card col-lg-4">
-                        <div class="card-img-top">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="card-body p-1">
-                            <h4 class="card-title text-primary">Lorem ipsum</h4>
-                            <p class="small">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam corporis similique rerum blanditiis quaerat, provident, voluptas, cumque repudiandae magni necessitatibus atque explicabo ipsam reiciendis rem. Tenetur commodi deserunt autem quo?
-                            </p>
-                            <p class="text-secondary small mb-0">
-                                01/01/01 1:00am
-                            </p>
-                        </div>
+                    <div class="card-body p-1">
+                        <h4 class="card-title text-primary">Lorem ipsum</h4>
+                        <p class="small">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam corporis similique rerum blanditiis quaerat, provident, voluptas, cumque repudiandae magni necessitatibus atque explicabo ipsam reiciendis rem. Tenetur commodi deserunt autem quo?
+                        </p>
+                        <p class="text-secondary small mb-0">
+                            01/01/01 1:00am
+                        </p>
                     </div>
-                    <div class="card col-lg-4">
-                        <div class="card-img-top">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="card-body p-1">
-                            <h4 class="card-title text-primary">Lorem ipsum</h4>
-                            <p class="small">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam corporis similique rerum blanditiis quaerat, provident, voluptas, cumque repudiandae magni necessitatibus atque explicabo ipsam reiciendis rem. Tenetur commodi deserunt autem quo?
-                            </p>
-                            <p class="text-secondary small mb-0">
-                                01/01/01 1:00am
-                            </p>
-                        </div>
+                </div>
+                <div class="card col-lg-4">
+                    <div class="card-img-top">
+                        <div class="overlay"></div>
                     </div>
-                    <div class="card col-lg-4">
-                        <div class="card-img-top">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="card-body p-1">
-                            <h4 class="card-title text-primary">Lorem ipsum</h4>
-                            <p class="small">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam corporis similique rerum blanditiis quaerat, provident, voluptas, cumque repudiandae magni necessitatibus atque explicabo ipsam reiciendis rem. Tenetur commodi deserunt autem quo?
-                            </p>
-                            <p class="text-secondary small mb-0">
-                                01/01/01 1:00am
-                            </p>
-                        </div>
+                    <div class="card-body p-1">
+                        <h4 class="card-title text-primary">Lorem ipsum</h4>
+                        <p class="small">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam corporis similique rerum blanditiis quaerat, provident, voluptas, cumque repudiandae magni necessitatibus atque explicabo ipsam reiciendis rem. Tenetur commodi deserunt autem quo?
+                        </p>
+                        <p class="text-secondary small mb-0">
+                            01/01/01 1:00am
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <div class="card-img-top">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="card-body p-1">
+                        <h4 class="card-title text-primary">Lorem ipsum</h4>
+                        <p class="small">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam corporis similique rerum blanditiis quaerat, provident, voluptas, cumque repudiandae magni necessitatibus atque explicabo ipsam reiciendis rem. Tenetur commodi deserunt autem quo?
+                        </p>
+                        <p class="text-secondary small mb-0">
+                            01/01/01 1:00am
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-<div class="footer bg-primary p-5">
-      <div class="bg-overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-4">
-            <h3 class="text-white">Las Vegas Happenings</h3>
-          </div>
-          <div class="col-12 col-lg-4 text-white">
-            <ul>
-              <li><a href="#" class="text-white h5">News</a></li>
-              <li><a href="#" class="text-white h5">Weather</a></li>
-              <li><a href="#" class="text-white h5">Food</a></li>
-              <li><a href="#" class="text-white h5">Sports</a></li>
-              <li><a href="#" class="text-white h5">Events</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-4 text-center">
-            <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" />
-          </div>
-        </div>
-      </div>
     </div>
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+    <div class="footer py-4" style="">
+        <div class="bg-overlay"></div>
+        <video autoplay muted loop class="bg-video">
+      <source src="videos/banner.mp4" type="video/mp4">
+    </video>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <!-- <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" /> -->
+                    <h3 class="text-white">About WhyVegasHawaii.COM</h3>
+                    <p class="text-white mt-3" style="font-size:small">
+                        Sample Company Short Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin est vitae sapien fermentum euismod. Nullam ullamcorper leo non arcu laoreet placerat. Nulla aliquet lorem eu purus placerat, lacinia feugiat leo
+                        blandit.
+                    </p>
+                    <h5 class="text-white">Our Contacts</h5>
+                    <div class="social-buttons">
+                        <button class="btn bg-secondary text-white"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-instagram"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-twitter"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fas fa-globe-americas"></i></button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-white">
+                    <h3 class="text-white">Recent Event</h3>
+                    <img src="img/events/event-photo1.jpg" class="w-75" alt="">
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3 class="text-white">Contact Us</h3>
+                    <form action="">
+                        <input type="text" class="form-control rounded-0 border-0" placeholder="Your Email">
+                        <textarea name="message" class="form-control rounded-0 border-0 my-1" id="message" cols="30" rows="3" placeholder="Your Message"></textarea>
+                        <button class="float-right btn bg-secondary rounded text-white"><i class="fas fa-paper-plane"></i> Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>

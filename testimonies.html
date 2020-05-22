@@ -1,493 +1,564 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="css/swiper.min.css">
-        <style>
-            .card {
-                border-radius: 0;
-                border: 0 !important;
-            }
-            @media (max-width: 425px) {
-                .swiper-slide {
-                    border: 1px solid rgba(0,0,0,0.2) !important;
-                }
-            }
-            @media (min-width: 768px) {
-                .swiper-slide {
-                    transition: all 0.5s linear;
-                }
-                .swiper-slide-next.card {
-                    box-shadow: 0px 0px 20px rgba(0,0,0,0.2) !important;
-                    border-right: 10px solid;
-                }
-                .swiper-slide:not(.swiper-slide-next) {
-                    opacity: 0.1;    
-                }
-                .swiper-wrapper {
-                    height: fit-content;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                }
-            }
 
-            .read-more {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #3791c0;
-                opacity: 0;
-                transition: all 0.3s linear;
-                cursor: pointer;
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        .card {
+            border-radius: 0;
+            border: 0 !important;
+        }
+        
+        @media (max-width: 425px) {
+            .swiper-slide {
+                border: 1px solid rgba(0, 0, 0, 0.2) !important;
             }
-            .swiper-slide-next .read-more:hover {
-                opacity: 0.8;
+        }
+        
+        @media (min-width: 768px) {
+            .swiper-slide {
+                transition: all 0.5s linear;
             }
-            .read-more .btn{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: transparent;
-                color: white;
-                
+            .swiper-slide-next.card {
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2) !important;
+                border-right: 10px solid;
             }
-        </style>
-    </head>
-    <body class="bg-light">
-        <!-- Header -->
-        <div class="row no-gutters p-0">         
-            <div class="banner order-2 order-md-1 col-12">
-                <div class="shadow"></div>
-                <video autoplay muted loop class="bg-video">
-                    <source src="videos/banner.mp4" type="video/mp4">
-                </video>
-                <div class="bg-overlay"></div>
-                <div class="content container">
-                   
-                    <div class="logo">
-          <a href="index.html">
-            <img src="img/logo/logo-animated.gif" alt="">
-            <img src="img/logo/whyvegashawaii.png" alt="">
-          </a>
-        </div>
+            .swiper-slide:not(.swiper-slide-next) {
+                opacity: 0.1;
+            }
+            .swiper-wrapper {
+                height: fit-content;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        
+        .read-more {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #3791c0;
+            opacity: 0;
+            transition: all 0.3s linear;
+            cursor: pointer;
+        }
+        
+        .swiper-slide-next .read-more:hover {
+            opacity: 0.8;
+        }
+        
+        .read-more .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- Header -->
+    <div class="row no-gutters p-0">
+        <div class="banner order-2 order-md-1 col-12">
+            <div class="shadow"></div>
+            <video autoplay muted loop class="bg-video">
+        <source src="videos/banner.mp4" type="video/mp4">
+      </video>
+            <div class="bg-overlay"></div>
+            <div class="content container">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo/logo-animated.gif" alt="">
+                        <img src="img/logo/whyvegashawaii.png" alt="">
                     </a>
-                    <div class="team-pic">
-                        <img src="img/team_pic.png" alt="">
-                    </div>
-                    <div class="links">
-                        <div class="btn-group-vertical btn-group-block">
-                            <a href="index.html" class="btn btn-primary mb-2">Our Team</a>
-                            <a href="#" class="btn btn-primary active">Testimonies</a>
-                        </div>
+                </div>
+                </a>
+                <div class="team-pic">
+                    <img src="img/team_pic.png" alt="">
+                </div>
+                <div class="links">
+                    <div class="btn-group-vertical btn-group-block">
+                        <a href="team.html" class="btn btn-primary mb-2">Our Team</a>
+                        <a href="testimonies.html" class="btn btn-primary active">Testimonies</a>
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars text-white"></i>
-                </button>
-                <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        
-                        <li class="nav-item d-block d-md-none">
-                            <a class="nav-link" href="index.html">Our Team</a>
-                        </li>
-                        <li class="nav-item  d-block d-md-none">
-                            <a class="nav-link" href="#">Testimonies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Financing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-                    </ul>
-                </div> 
-            </nav>
         </div>
+        <nav class="navbar navbar-expand-md order-1 order-md-2 col-12" id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="my-collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+      </button>
+            <div class="navbar-collapse my-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item d-block d-md-none">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item  d-block d-md-none">
+                        <a class="nav-link btn btn-primary " href="testimonies.html">Testimonies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties/properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financing.html">Financing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">What Happens in Vegas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-        <!-- Barbie Y. Hee -->
-        <div class="container mt-2 mt-md-5 pt-2 pt-md-5">
-            <h2 class="text-center mb-0">Barbie Y. Hee</h2>
-            <h1 class="text-center text-primary">Testimonies</h1>
+    <!-- Barbie Y. Hee -->
+    <div class="container mt-2 mt-md-5 pt-2 pt-md-5">
+        <h2 class="text-center mb-0">Barbie Y. Hee</h2>
+        <h1 class="text-center text-primary">Testimonies</h1>
 
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>I have had the distinct pleasure of working with Barbie to both buy a house and to sell a house. In both instances, Barbie and her team were on top of all matters, which helped to make stressful moving transitions less stressful due to their competence and professionalism. Anyone interested in a real estate career should follow Barbie around to see the qualities that are needed to be successful in this profession. With my latest interaction with Barbie, she was creative in her approach to selling my home (it was under contract in two days). Barbie is driven with a terrific work ethic and was always in contact by phone, text, and email to keep me informed on how things were progressing especially before the home entered the market and when minor repairs were needed resulting from the home inspection. Last, and most importantly, Barbie is highly ethical and I consider her a good friend due to her honesty and integrity. I would have no hesitation recommending her for anyone that is in need of an experienced and knowledgeable real estate professional.</p>
-                                <p>Take care and hope you had a good weekend! FYI, I still havent received check as of Saturday, October 27th.</p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jason Osaki</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">I have had the distinct pleasure of working with Barbie to both buy a house and to sell a house. In both instances, Barbie and her team were on top of all matters, which helped to make stressful moving transitions less stressful due to their competence and professionalism.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jason Osaki</footer>
-                            </blockquote>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>I have had the distinct pleasure of working with Barbie to both buy a house and to sell a house. In both instances, Barbie and her team were on top of all matters, which helped to make stressful moving transitions less stressful
+                                due to their competence and professionalism. Anyone interested in a real estate career should follow Barbie around to see the qualities that are needed to be successful in this profession. With my latest interaction with
+                                Barbie, she was creative in her approach to selling my home (it was under contract in two days). Barbie is driven with a terrific work ethic and was always in contact by phone, text, and email to keep me informed on how
+                                things were progressing especially before the home entered the market and when minor repairs were needed resulting from the home inspection. Last, and most importantly, Barbie is highly ethical and I consider her a good
+                                friend due to her honesty and integrity. I would have no hesitation recommending her for anyone that is in need of an experienced and knowledgeable real estate professional.</p>
+                            <p>Take care and hope you had a good weekend! FYI, I still havent received check as of Saturday, October 27th.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jason Osaki</footer>
                         </div>
                     </div>
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>I first met Barbie at a Senior Seminar at the Pagoda Hotel around the beginning of 2017. After my oldest sister passed away in July 2017, I started thinking about selling the old family home. I needed to downsize from this big 4 bedroom/2 story home to a one bedroom condo. My parents originally purchased the home back in the 1930s. Over the years they made improvements and kept the house in good shape. My nephew and 2 nieces were part owners of the house. I discussed with them about selling and they agreed to it. I decided to contact Barbie because she has always genuinely shown care regarding senior citizens. Barbie not only was instrumental in selling our family home, but also helped me find a one bedroom condo for myself.</p>
-                                
-                                <p>Her knowledge in real estate and her tireless patience is such a great asset.</p>
-    
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">Diane Inouye</footer>
-                            </div>
-                           
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">I decided to contact Barbie because she has always genuinely shown care regarding senior citizens.Barbie not only was instrumental in selling our family home, but also helped me find a one bedroom condo for myself.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Diane Inouye</footer>
-                            </blockquote>
-                        </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">I have had the distinct pleasure of working with Barbie to both buy a house and to sell a house. In both instances, Barbie and her team were on top of all matters, which helped to make stressful moving transitions less stressful
+                                due to their competence and professionalism.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jason Osaki</footer>
+                        </blockquote>
                     </div>
-
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>My husband and I had been thinking of purchasing a second condo or investment property for some time and even though we know quite a few realtors personally, we didn't feel like they were the right fit for what we were looking for. We met Barbie through a close friend while she was helping him find another investment property to add to his own real estate portfolio and we instantly knew we wanted to work with her. Barbie is extremely knowledgeable, professional, and very easy to talk to. You can tell she really cares about us as people and not just as clients. She was always available to answer any questions we had and was supportive throughout the entire process. We really could not have done this without her. We are so grateful to have met her and will most definitely turn to Barbie for any future real estate needs and confidently refer her to any friends or family in need of an excellent realtor!</p>
-
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jeanna Okazaki</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">Barbie is extremely knowledgeable, professional, and very easy to talk to. You can tell she really cares about us as people and not just as clients. She was always available to answer any questions we had and was supportive throughout the entire process.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jeanna Okazaki</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>I first met Barbie at a Senior Seminar at the Pagoda Hotel around the beginning of 2017. After my oldest sister passed away in July 2017, I started thinking about selling the old family home. I needed to downsize from this
+                                big 4 bedroom/2 story home to a one bedroom condo. My parents originally purchased the home back in the 1930s. Over the years they made improvements and kept the house in good shape. My nephew and 2 nieces were part owners
+                                of the house. I discussed with them about selling and they agreed to it. I decided to contact Barbie because she has always genuinely shown care regarding senior citizens. Barbie not only was instrumental in selling our
+                                family home, but also helped me find a one bedroom condo for myself.</p>
+
+                            <p>Her knowledge in real estate and her tireless patience is such a great asset.</p>
+
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">Diane Inouye</footer>
+                        </div>
+
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">I decided to contact Barbie because she has always genuinely shown care regarding senior citizens.Barbie not only was instrumental in selling our family home, but also helped me find a one bedroom condo for myself.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Diane Inouye</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>My husband and I had been thinking of purchasing a second condo or investment property for some time and even though we know quite a few realtors personally, we didn't feel like they were the right fit for what we were looking
+                                for. We met Barbie through a close friend while she was helping him find another investment property to add to his own real estate portfolio and we instantly knew we wanted to work with her. Barbie is extremely knowledgeable,
+                                professional, and very easy to talk to. You can tell she really cares about us as people and not just as clients. She was always available to answer any questions we had and was supportive throughout the entire process.
+                                We really could not have done this without her. We are so grateful to have met her and will most definitely turn to Barbie for any future real estate needs and confidently refer her to any friends or family in need of an
+                                excellent realtor!</p>
+
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jeanna Okazaki</footer>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">Barbie is extremely knowledgeable, professional, and very easy to talk to. You can tell she really cares about us as people and not just as clients. She was always available to answer any questions we had and was supportive
+                                throughout the entire process.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Jeanna Okazaki</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
 
-        <!-- Steven Tagawa -->
-        <div class="container ">
-            <h2 class="text-center mb-0">Steven Tagawa</h2>
-            <h1 class="text-center text-primary">Testimonies</h1>
+    <!-- Steven Tagawa -->
+    <div class="container ">
+        <h2 class="text-center mb-0">Steven Tagawa</h2>
+        <h1 class="text-center text-primary">Testimonies</h1>
 
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Steven was really great support and advisor for my wife and I. The process of financing a new home is a stressful one and we could talk to him about all of our concerns and decisions to make the best-informed decisions for my family. I really appreciated his authenticity that earned my trust and business for future investments. Once again thank you!!!</p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Kyle</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">The process of financing a new home is a stressful one and we could talk to him about all of our concerns and decisions to make the best-informed decisions for my family.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Kyle</footer>
-                            </blockquote>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Steven was really great support and advisor for my wife and I. The process of financing a new home is a stressful one and we could talk to him about all of our concerns and decisions to make the best-informed decisions for
+                                my family. I really appreciated his authenticity that earned my trust and business for future investments. Once again thank you!!!</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Kyle</footer>
                         </div>
                     </div>
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Steven made whole mortgage loan application process look like a breeze. He answered all my questions and most important to me he provided detailed rate lock options which helped me make timely rate lock decision. Thank you, Steven!</p>
-                            
-    
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">Danielius</footer>
-                            </div>
-                           
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">Steven made whole mortgage loan application process look like a breeze. He answered all my questions and most important to me he provided detailed rate lock options which helped me make timely rate lock decision. Thank you, Steven!</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Danielius</footer>
-                            </blockquote>
-                        </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">The process of financing a new home is a stressful one and we could talk to him about all of our concerns and decisions to make the best-informed decisions for my family.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Kyle</footer>
+                        </blockquote>
                     </div>
-
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>
-                                    Purchasing a home is always a stressful experience, however, Steven and Kelsey made the overall process very easy and seamless. They are an efficient team with excellent communication skills. I will definitely recommend their services to anyone who is thinking about buying a home. Thanks again for such a positive experience!
-                                </p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Tammy T.</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">Purchasing a home is always a stressful experience, however, Steven and Kelsey made the overall process very easy and seamless. They are an efficient team with excellent communication skills. I will definitely recommend their services to anyone who is thinking about buying a home. Thanks again for such a positive experience!</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Tammy T.</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Steven made whole mortgage loan application process look like a breeze. He answered all my questions and most important to me he provided detailed rate lock options which helped me make timely rate lock decision. Thank you,
+                                Steven!
+                            </p>
+
+
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">Danielius</footer>
+                        </div>
+
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">Steven made whole mortgage loan application process look like a breeze. He answered all my questions and most important to me he provided detailed rate lock options which helped me make timely rate lock decision. Thank you,
+                                Steven!
+                            </p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Danielius</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>
+                                Purchasing a home is always a stressful experience, however, Steven and Kelsey made the overall process very easy and seamless. They are an efficient team with excellent communication skills. I will definitely recommend their services to anyone who is
+                                thinking about buying a home. Thanks again for such a positive experience!
+                            </p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Tammy T.</footer>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">Purchasing a home is always a stressful experience, however, Steven and Kelsey made the overall process very easy and seamless. They are an efficient team with excellent communication skills. I will definitely recommend their
+                                services to anyone who is thinking about buying a home. Thanks again for such a positive experience!</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Tammy T.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
 
-        <!-- David -->
-        <div class="container ">
-            <h2 class="text-center mb-0">David Sur</h2>
-            <h1 class="text-center text-primary">Testimonies</h1>
+    <!-- David -->
+    <div class="container ">
+        <h2 class="text-center mb-0">David Sur</h2>
+        <h1 class="text-center text-primary">Testimonies</h1>
 
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Dear David,</p>
-                                <p>
-                                    We were very fortunate in having you for our realtors, doing all 
-                                    the legwork and more. All we needed to do was come up with the cash. I 
-                                    was pleasantly surprised that we started and closed within a couple of 
-                                    months. The coordination that you did with Rae and your team in LV and 
-                                    when we were there, was excellent. I certainly will recommend you folks 
-                                    to our friends. 
-                                </p>
-                                <p>Again, mahalo to you and much appreciated.</p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Albert and Ellen K.</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">I was pleasantly surprised that we started and closed within a couple of  months. The coordination that you did with Rae and your team in LV and when we were there, was excellent.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Albert and Ellen K.</footer>
-                            </blockquote>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Dear David,</p>
+                            <p>
+                                We were very fortunate in having you for our realtors, doing all the legwork and more. All we needed to do was come up with the cash. I was pleasantly surprised that we started and closed within a couple of months. The coordination that you did with Rae
+                                and your team in LV and when we were there, was excellent. I certainly will recommend you folks to our friends.
+                            </p>
+                            <p>Again, mahalo to you and much appreciated.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Albert and Ellen K.</footer>
                         </div>
                     </div>
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Hi David,</p>
-                                <p>Roy and I would like to say thank you and Darrell, for all your help in purchasing our forever home in Las Vegas. We went to your seminar just to see what you guys were all about and from your first presentation, you captured our attention. Mind you, we had been talking to a realtor in Vegas, whom we had to inform that we ultimately chose to work with Xpand Realty. You guys made everything so easy and step by step instructions were so clear. Always checking up on us to see if we were okay and never once did we feel pressured to make a decision of any kind!</p>
-                                <p>As you know, we will be selling our place here in Honolulu. When that time comes, you KNOW we will call you and rely on your expertise again!</p>
-                                <p>We truly appreciate all you and Darrell have done for us and we look forward to working with you guys in the near future!</p>
-                                <p>With Warmest Aloha,</p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">Lynnette and Roy K.</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">You guys made everything so easy and step by step instructions were so clear. Always checking up on us to see if we were okay and never once did we feel pressured to make a decision of any kind!</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Lynnette and Roy K.</footer>
-                            </blockquote>
-                        </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">I was pleasantly surprised that we started and closed within a couple of months. The coordination that you did with Rae and your team in LV and when we were there, was excellent.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Albert and Ellen K.</footer>
+                        </blockquote>
                     </div>
-
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Dear David,</p>
-                                <p>
-                                    I just wanted to say a quick thank you for all the assistance you gave me before my retirement. You were quietly persistent, considerate of my time and I appreciated your follow-up...and you never forgot to follow-up on our conversations!
-                                </p>
-                                <p>
-                                    Your presentation was friendly, professional, detailed and flexible. We often needed changes to the contract, and you were usually the one to came up with the solutions we needed. Most importantly, you always lived by your word.
-                                </p>
-                                <p>
-                                    You have all the qualities of a successful real estate professional. It was my absolute privilege and any buyer or seller will be lucky to have you represent them.
-                                </p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Patricia Y.</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">Your presentation was friendly, professional, detailed and flexible. We often needed changes to the contract, and you were usually the one to came up with the solutions we needed. Most importantly, you always lived by your word.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Patricia Y.</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Aloha,</p>
-                                <p>
-                                    While at Kahala Nui, Hawaii's premier retirement community, I had the pleasure and good fortune of working with David Sur. His moral standards and ethics are resolute. Without question, David's professional success is based on sacrosanct business practices, a strong sense of commitment, client satisfaction and excellent attention to details and the willingness to go the extra mile to transform a client's s vision into reality! 
-                                </p>
-                                <p>
-                                    Sincerity is David�s hallmark, which made working with him, through his collaborative efforts, extensive experience and tireless work ethics and the entire process categorically enjoyable!
-                                </p>
-                                <p>
-                                    Sincerely, 
-                                </p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Darlene C.</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">His moral standards and ethics are resolute. Without question, David's professional success is based on sacrosanct business practices, a strong sense of commitment, client satisfaction and excellent attention to details and the willingness to go the extra mile to transform a client's s vision into reality!</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Darlene C.</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Hi David,</p>
+                            <p>Roy and I would like to say thank you and Darrell, for all your help in purchasing our forever home in Las Vegas. We went to your seminar just to see what you guys were all about and from your first presentation, you captured
+                                our attention. Mind you, we had been talking to a realtor in Vegas, whom we had to inform that we ultimately chose to work with Xpand Realty. You guys made everything so easy and step by step instructions were so clear.
+                                Always checking up on us to see if we were okay and never once did we feel pressured to make a decision of any kind!</p>
+                            <p>As you know, we will be selling our place here in Honolulu. When that time comes, you KNOW we will call you and rely on your expertise again!</p>
+                            <p>We truly appreciate all you and Darrell have done for us and we look forward to working with you guys in the near future!</p>
+                            <p>With Warmest Aloha,</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">Lynnette and Roy K.</footer>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">You guys made everything so easy and step by step instructions were so clear. Always checking up on us to see if we were okay and never once did we feel pressured to make a decision of any kind!</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Lynnette and Roy K.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Dear David,</p>
+                            <p>
+                                I just wanted to say a quick thank you for all the assistance you gave me before my retirement. You were quietly persistent, considerate of my time and I appreciated your follow-up...and you never forgot to follow-up on our conversations!
+                            </p>
+                            <p>
+                                Your presentation was friendly, professional, detailed and flexible. We often needed changes to the contract, and you were usually the one to came up with the solutions we needed. Most importantly, you always lived by your word.
+                            </p>
+                            <p>
+                                You have all the qualities of a successful real estate professional. It was my absolute privilege and any buyer or seller will be lucky to have you represent them.
+                            </p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Patricia Y.</footer>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">Your presentation was friendly, professional, detailed and flexible. We often needed changes to the contract, and you were usually the one to came up with the solutions we needed. Most importantly, you always lived by your
+                                word.
+                            </p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Patricia Y.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Aloha,</p>
+                            <p>
+                                While at Kahala Nui, Hawaii's premier retirement community, I had the pleasure and good fortune of working with David Sur. His moral standards and ethics are resolute. Without question, David's professional success is based on sacrosanct business practices,
+                                a strong sense of commitment, client satisfaction and excellent attention to details and the willingness to go the extra mile to transform a client's s vision into reality!
+                            </p>
+                            <p>
+                                Sincerity is David�s hallmark, which made working with him, through his collaborative efforts, extensive experience and tireless work ethics and the entire process categorically enjoyable!
+                            </p>
+                            <p>
+                                Sincerely,
+                            </p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Darlene C.</footer>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">His moral standards and ethics are resolute. Without question, David's professional success is based on sacrosanct business practices, a strong sense of commitment, client satisfaction and excellent attention to details and
+                                the willingness to go the extra mile to transform a client's s vision into reality!</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Darlene C.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
 
-        <!-- Steven Tagawa -->
+    <!-- Steven Tagawa -->
+    <div class="container mb-5">
+        <h2 class="text-center mb-0">Darrell Kimura</h2>
+        <h1 class="text-center text-primary">Testimonies</h1>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Darrell Kimura recently helped me with a purchase of an investment property in Las Vegas. He presented me with several quality properties that fit my criteria. Each one had an analysis based upon my investment goals. His knowledge
+                                and analytical reasoning made it easy to make a solid decision. I ended up with the perfect property with the perfect tenant. He advised me during the whole buying process. It went very smoothly. I plan to use Darrell again
+                                for my future Las Vegas purchases.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Ron Y.</footer>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">I ended up with the perfect property with the perfect tenant. He advised me during the whole buying process. It went very smoothly. I plan to use Darrell again for my future Las Vegas purchases.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Ron Y.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>Darrel did an awesome job helping us find the perfect home. Hid deep knowledge of both Hawaii people the Las Vegas area allowed him to focus on properties we would be interested in without wasting our time. He got us a great
+                                deal in negotiations and led us through all the steps in the purchase without any hitches. He could really relate to us and made us very comfortable through the entire process. I highly recommend darrell for anyone looking
+                                to buy a place in Vegas.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">S.T.</footer>
+                        </div>
+
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead"> He got us a great deal in negotiations and led us through all the steps in the purchase without any hitches. He could really relate to us and made us very comfortable through the entire process. I highly recommend darrell for
+                                anyone looking to buy a place in Vegas.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">S.T.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide pt-5 pb-5">
+                    <div class="read-more">
+                        <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
+                        <div class="full-content d-none">
+                            <p>
+                                As nerve wracking as it can be in selling a home, we were extremely satisfied in choosing Darrell Kimura as our agent to sell our property in Hawaii. He was upfront and straightforward with us in having realistic expectations in the process. He gave us
+                                a guideline in what we needed to do to our home to get the most value. He not only got us a selling price within our expectations, but even after he sold our home, he continued to offer any help he could in making sure
+                                our relocation to Las Vegas was on track.
+                            </p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Marlon U.</footer>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3><i class="fas fa-quote-left text-left"></i></h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0 small lead">He not only got us a selling price within our expectations, but even after he sold our home, he continued to offer any help he could in making sure our relocation to Las Vegas was on track.</p>
+                            <footer class="blockquote-footer text-dark font-weight-bold mt-2">Marlon U.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer py-4 mt-5" style="">
+        <div class="bg-overlay"></div>
+        <video autoplay muted loop class="bg-video">
+      <source src="videos/banner.mp4" type="video/mp4">
+    </video>
         <div class="container">
-            <h2 class="text-center mb-0">Darrell Kimura</h2>
-            <h1 class="text-center text-primary">Testimonies</h1>
-
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Darrell Kimura recently helped me with a purchase of an investment property in Las Vegas. He presented me with several quality properties that fit my criteria. Each one had an analysis based upon my investment goals. His knowledge and analytical reasoning made it easy to make a solid decision.  I ended up with the perfect property with the perfect tenant. He advised me during the whole buying process. It went very smoothly.  I plan to use Darrell again for my future Las Vegas purchases.</p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Ron Y.</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">I ended up with the perfect property with the perfect tenant. He advised me during the whole buying process. It went very smoothly.  I plan to use Darrell again for my future Las Vegas purchases.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Ron Y.</footer>
-                            </blockquote>
-                        </div>
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <!-- <img class="w-50" src="img/logo/whyvegashawaii.png" alt="" /> -->
+                    <h3 class="text-white">About WhyVegasHawaii.COM</h3>
+                    <p class="text-white mt-3" style="font-size:small">
+                        Sample Company Short Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin est vitae sapien fermentum euismod. Nullam ullamcorper leo non arcu laoreet placerat. Nulla aliquet lorem eu purus placerat, lacinia feugiat leo
+                        blandit.
+                    </p>
+                    <h5 class="text-white">Our Contacts</h5>
+                    <div class="social-buttons">
+                        <button class="btn bg-secondary text-white"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-instagram"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fab fa-twitter"></i></button>
+                        <button class="btn bg-secondary text-white"><i class="fas fa-globe-americas"></i></button>
                     </div>
-                    
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>Darrel did an awesome job helping us find the perfect home. Hid deep knowledge of both Hawaii people the Las Vegas area allowed him to focus on properties we would be interested in without wasting our time.  He got us a great deal in negotiations and led us through all the steps in the purchase without any hitches. He could really relate to us and made us very comfortable through the entire process. I highly recommend darrell for anyone looking to buy a place in Vegas.</p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2 lead">S.T.</footer>
-                            </div>
-                           
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead"> He got us a great deal in negotiations and led us through all the steps in the purchase without any hitches. He could really relate to us and made us very comfortable through the entire process. I highly recommend darrell for anyone looking to buy a place in Vegas.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">S.T.</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide pt-5 pb-5">
-                        <div class="read-more">
-                            <button class="btn"><h6 class="h1"><i class="fas fa-book-open"></i></h6><h6 class="h1">Read More</h6></button>
-                            <div class="full-content d-none">
-                                <p>
-                                    As nerve wracking as it can be in selling a home, we were extremely satisfied in choosing Darrell Kimura as our agent to sell our property in Hawaii.  He was upfront and straightforward with us in having realistic expectations in the process.  He gave us a guideline in what we needed to do to our home to get the most value. He not only got us a selling price within our expectations, but even after he sold our home, he continued to offer any help he could in making sure our relocation to Las Vegas was on track. 
-                                </p>
-                                <footer class="blockquote-footer text-dark font-weight-bold mt-2">Marlon U.</footer>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3><i class="fas fa-quote-left text-left"></i></h3>
-                            <blockquote class="blockquote">
-                              <p class="mb-0 small lead">He not only got us a selling price within our expectations, but even after he sold our home, he continued to offer any help he could in making sure our relocation to Las Vegas was on track.</p>
-                              <footer class="blockquote-footer text-dark font-weight-bold mt-2">Marlon U.</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-
+                </div>
+                <div class="col-12 col-lg-4 text-white">
+                    <h3 class="text-white">Recent Event</h3>
+                    <img src="img/events/event-photo1.jpg" class="w-75" alt="">
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3 class="text-white">Contact Us</h3>
+                    <form action="">
+                        <input type="text" class="form-control rounded-0 border-0" placeholder="Your Email">
+                        <textarea name="message" class="form-control rounded-0 border-0 my-1" id="message" cols="30" rows="3" placeholder="Your Message"></textarea>
+                        <button class="float-right btn bg-secondary rounded text-white"><i class="fas fa-paper-plane"></i> Send</button>
+                    </form>
                 </div>
             </div>
         </div>
-
-        <div class="modal" tabindex="-1" role="dialog" id="full-testimonies">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="full-testimonies">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="modal-body p-5">
-                    
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">
                         <i class="fas fa-times mr-2"></i> Close
                     </button>
                 </div>
-              </div>
             </div>
         </div>
+    </div>
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/swiper.js"></script>
-        <script src="js/script.js"></script>
-        <script>
-            $(document).ready(function() {
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
 
-                function showModal($elem) {
-                    $modal = $('#full-testimonies');
-                    $modal.find('.modal-body').html(
-                        $elem.querySelectorAll('.full-content')[0].innerHTML
-                    );
-                    $modal.modal('show');
-                }
+            function showModal($elem) {
+                $modal = $('#full-testimonies');
+                $modal.find('.modal-body').html(
+                    $elem.querySelectorAll('.full-content')[0].innerHTML
+                );
+                $modal.modal('show');
+            }
 
-                var swiper = new Swiper('.swiper-container', {
-                    speed: 1000,
-                    autoplay: true,
-                    slidesPerView: 3,
-                    breakpoints: {
-                        1024: {
-                            slidesPerView: 3
-                        },
-                        768: {
-                            slidesPerView: 2
-                        },
-                        320: {
-                            slidesPerView: 1
-                        }
+            var swiper = new Swiper('.swiper-container', {
+                speed: 1000,
+                autoplay: true,
+                slidesPerView: 3,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 3
                     },
-                    spaceBetween: 10,
-                    loop: true,
-                    on: {
-                        click: function() {
-                           showModal(this.clickedSlide);
-                        }
+                    768: {
+                        slidesPerView: 2
+                    },
+                    320: {
+                        slidesPerView: 1
                     }
-                });
-            })
-        </script>
-    </body>
+                },
+                spaceBetween: 10,
+                loop: true,
+                on: {
+                    click: function() {
+                        showModal(this.clickedSlide);
+                    }
+                }
+            });
+        })
+    </script>
+</body>
+
 </html>
