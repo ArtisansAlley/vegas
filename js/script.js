@@ -1,12 +1,16 @@
 $(document).ready(function() {
     $navbar = $('#navbar');
     var navBarOffset = $('.banner').height();
+    var screenWidth = $('body').width();
 
-    console.log(navBarOffset)
+    if ( screenWidth <= 425 ) {
+        navBarOffset = 1;
+    }
 
     $(window).scroll(function(e) {
         $navbar = $('#navbar');
-        if ($(this).scrollTop() >= navBarOffset) {
+
+        if ( $(this).scrollTop() >= navBarOffset) {
             console.log('bottom');
             $navbar.addClass('fixed-top');
         }
