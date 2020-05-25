@@ -294,3 +294,19 @@ h6 {
   position: relative;
   z-index: 3;
 }
+
+.border-luxury{
+  border-color: #f08beb;
+}
+
+.border-age{
+  border-color: #f5f58e;
+}
+
+.luxury{
+  color: purple;
+}
+
+.age-restrict{
+  color: gold;
+}
